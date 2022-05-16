@@ -17,7 +17,12 @@
             },
             {
                 "module_name" : "higgs_dna.taggers.hhggxx_tagger",
-                "tagger" : "HHggbbTagger"
+                "tagger" : "HHggbbTagger",
+                "kwargs" : {
+                    "options" : {
+			"genHiggsAnalysis" : false
+		    }
+		}
             }
     ],
     "systematics" : {
@@ -25,33 +30,13 @@
         "independent_collections" : {}
     },
     "samples" : {
-        "catalog" : "metadata/samples/HHggxx_rereco_signal_samples.json",
+        "catalog" : "metadata/samples/HHggxx_rereco_singleH_samples.json",
         "sample_list" : [
-
-	    "GluGluToBulkGravitonToHHTo2G4Q_M1000",
-	    "GluGluToBulkGravitonToHHTo2G4Q_M1250",
-	    "GluGluToBulkGravitonToHHTo2G4Q_M1500",
-	    "GluGluToBulkGravitonToHHTo2G4Q_M1750",
-	    "GluGluToBulkGravitonToHHTo2G4Q_M2000",
-	    "GluGluToBulkGravitonToHHTo2G4Q_M2500",
-	    "GluGluToBulkGravitonToHHTo2G4Q_M3000",
-
-	    "GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M1000",
-	    "GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M1250",
-	    "GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M1500",
-	    "GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M1750",
-	    "GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M2000",
-	    "GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M2500",
-	    "GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M3000",
-
-	    "GluGluToBulkGravitonToHHTo2B2G_M1000",
-	    "GluGluToBulkGravitonToHHTo2B2G_M1250",
-	    "GluGluToBulkGravitonToHHTo2B2G_M1500",
-	    "GluGluToBulkGravitonToHHTo2B2G_M1750",
-	    "GluGluToBulkGravitonToHHTo2B2G_M2000",
-	    "GluGluToBulkGravitonToHHTo2B2G_M2500",
-	    "GluGluToBulkGravitonToHHTo2B2G_M3000"
-
+	    "GluGluHToGG_M125_13TeV_amcatnloFXFX_pythia8",
+	    "VBFHToGG_M125_13TeV_amcatnlo_pythia8",
+            "VHToGG_M125_13TeV_amcatnloFXFX_madspin_pythia8",
+            "ttHJetToGG_M125_13TeV_amcatnloFXFX_madspin_pythia8",
+            "THQ_ctcvcp_HToGG_M125_13TeV-madgraph-pythia8"
 	],
         "years" : ["2016","2017","2018"]
     },

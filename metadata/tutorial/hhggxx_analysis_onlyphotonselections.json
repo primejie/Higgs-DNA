@@ -9,7 +9,7 @@
                 "module_name" : "higgs_dna.taggers.diphoton_tagger",
                 "tagger" : "DiphotonTagger",
                 "kwargs" : {
-                "name" : "diphoton_tagger",
+                    "name" : "diphoton_tagger",
                     "options" : {
                         "gen_info" : { "calculate" : true }
                     }
@@ -17,7 +17,12 @@
             },
             {
                 "module_name" : "higgs_dna.taggers.hhggxx_tagger",
-                "tagger" : "HHggbbTagger"
+                "tagger" : "HHggbbTagger",
+		"kwargs" : {
+		    "options" : {
+			"nocuts" : true
+		    }
+		}
             }
     ],
     "systematics" : {
@@ -25,7 +30,7 @@
         "independent_collections" : {}
     },
     "samples" : {
-        "catalog" : "metadata/samples/HHggxx_rereco_signal_samples.json",
+        "catalog" : "metadata/samples/HHggxx_samples.json",
         "sample_list" : [
 
 	    "GluGluToBulkGravitonToHHTo2G4Q_M1000",
@@ -53,14 +58,14 @@
 	    "GluGluToBulkGravitonToHHTo2B2G_M3000"
 
 	],
-        "years" : ["2016","2017","2018"]
+        "years" : ["2017"]
     },
     "variables_of_interest" : [
         ["Diphoton", "mass"], ["Diphoton", "pt"], ["Diphoton", "eta"], ["Diphoton", "phi"], ["Diphoton", "dR"],
 
-        ["LeadPhoton", "pt"], ["LeadPhoton", "eta"], ["LeadPhoton", "phi"], ["LeadPhoton", "mass"], ["LeadPhoton", "mvaID"], ["LeadPhoton", "genPartFlav"], ["LeadPhoton", "pixelSeed"], 
-        ["SubleadPhoton", "pt"], ["SubleadPhoton", "eta"], ["SubleadPhoton", "phi"], ["SubleadPhoton", "mass"], ["SubleadPhoton", "mvaID"], ["SubleadPhoton", "genPartFlav"], ["SubleadPhoton", "pixelSeed"],
-
+        ["LeadPhoton", "pt"], ["LeadPhoton", "eta"], ["LeadPhoton", "phi"], ["LeadPhoton", "mass"], ["LeadPhoton", "mvaID"], ["LeadPhoton", "genPartFlav"], ["LeadPhoton", "pixelSeed"], ["LeadPhoton", "sieie"], ["LeadPhoton", "cutBased"], ["LeadPhoton", "hoe"],
+        ["SubleadPhoton", "pt"], ["SubleadPhoton", "eta"], ["SubleadPhoton", "phi"], ["SubleadPhoton", "mass"], ["SubleadPhoton", "mvaID"], ["SubleadPhoton", "genPartFlav"], ["SubleadPhoton", "pixelSeed"], ["SubleadPhoton", "sieie"], ["SubleadPhoton", "cutBased"], ["SubleadPhoton", "hoe"], 
+	
 	"fathbbjet_pt", "fathbbjet_eta", "fathbbjet_phi", "fathbbjet_mass", "fathbbjet_deepTagMD_HbbvsQCD", "fathbbjet_deepTagMD_H4qvsQCD",
 	"fath4qjet_pt", "fath4qjet_eta", "fath4qjet_phi", "fath4qjet_mass", "fath4qjet_deepTagMD_H4qvsQCD", "fath4qjet_deepTagMD_H4qvsQCD",
 
@@ -81,12 +86,13 @@
 	"n_electrons", "n_muons", "n_leptons", "n_jets", "n_bjets", "n_fatjets", "category",
 	"tag_idx",
         "weight_central",
-        "event"
+        "event",
+	"hhggxx_photonIDcut", "hhggxx_ptOvermgg_cut", "hhggxx_category_cut", "hhggxx_allcuts"
     ],
     "branches" : [
             "Photon_pt", "Photon_eta", "Photon_phi", "Photon_mass",
             "Photon_pixelSeed", "Photon_mvaID", "Photon_electronVeto",
-            "Photon_sieie",
+            "Photon_sieie","Photon_cutBased",
             "Photon_r9", "Photon_hoe", "Photon_pfRelIso03_chg", "Photon_pfRelIso03_all",
             "Photon_isScEtaEB", "Photon_isScEtaEE",
             "Photon_trkSumPtHollowConeDR03", "Photon_photonIso", "Photon_chargedHadronIso",

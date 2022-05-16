@@ -17,7 +17,12 @@
             },
             {
                 "module_name" : "higgs_dna.taggers.hhggxx_tagger",
-                "tagger" : "HHggbbTagger"
+                "tagger" : "HHggbbTagger",
+                "kwargs" : {
+                    "options" : {
+			"genHiggsAnalysis" : false
+		    }
+		}
             }
     ],
     "systematics" : {
@@ -25,33 +30,15 @@
         "independent_collections" : {}
     },
     "samples" : {
-        "catalog" : "metadata/samples/HHggxx_rereco_signal_samples.json",
+        "catalog" : "metadata/samples/HHggxx_rereco_BKG_samples.json",
         "sample_list" : [
-
-	    "GluGluToBulkGravitonToHHTo2G4Q_M1000",
-	    "GluGluToBulkGravitonToHHTo2G4Q_M1250",
-	    "GluGluToBulkGravitonToHHTo2G4Q_M1500",
-	    "GluGluToBulkGravitonToHHTo2G4Q_M1750",
-	    "GluGluToBulkGravitonToHHTo2G4Q_M2000",
-	    "GluGluToBulkGravitonToHHTo2G4Q_M2500",
-	    "GluGluToBulkGravitonToHHTo2G4Q_M3000",
-
-	    "GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M1000",
-	    "GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M1250",
-	    "GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M1500",
-	    "GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M1750",
-	    "GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M2000",
-	    "GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M2500",
-	    "GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M3000",
-
-	    "GluGluToBulkGravitonToHHTo2B2G_M1000",
-	    "GluGluToBulkGravitonToHHTo2B2G_M1250",
-	    "GluGluToBulkGravitonToHHTo2B2G_M1500",
-	    "GluGluToBulkGravitonToHHTo2B2G_M1750",
-	    "GluGluToBulkGravitonToHHTo2B2G_M2000",
-	    "GluGluToBulkGravitonToHHTo2B2G_M2500",
-	    "GluGluToBulkGravitonToHHTo2B2G_M3000"
-
+            "DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa",
+            "GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf",
+            "QCD_Pt-40toInf_DoubleEMEnriched_MGG-80toInf",
+            "TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8",
+            "TGJets_TuneCP5_13TeV_amcatnlo_madspin_pythia8",
+            "TTGJets_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8",
+            "TTGG_0Jets_TuneCP5_13TeV_amcatnlo_madspin_pythia8"
 	],
         "years" : ["2016","2017","2018"]
     },
