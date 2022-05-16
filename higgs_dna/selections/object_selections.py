@@ -109,8 +109,10 @@ def delta_R(objects1, objects2, min_dr):
     :rtype: awkward.highlevel.Array
     """
 
-    if awkward.count(objects1) == 0 or awkward.count(objects2) == 0:
+    if awkward.count(objects1) == 0:
         return objects1.pt < 0. 
+    if awkward.count(objects2) == 0:
+        return objects1.pt >= 0.
 
     if not isinstance(objects1, vector.Vector4D):
         objects1 = awkward.Array(objects1, with_name = "Momentum4D")
