@@ -17,6 +17,7 @@ def load_config(config):
     :return: config options as dictionary
     :rtype: dict
     """
+
     if isinstance(config, dict):
         return config
 
@@ -25,7 +26,9 @@ def load_config(config):
             logger.warning("[load_config] : You specified a string, meaning we load config options from a json file, but %s does not look like a json file!" % config)
 
         with open(expand_path(config), "r") as f_in:
-            return json.load(f_in)
+            try: c = json.load(f_in)
+            except: raise RuntimeError("[load_config] : error loading file %s"%config)
+            else: return c
 
     else:
         message = "[load_config] : You tried to load a config file with '%s' which has type <%s>, but only loading from json file (<str>) or <dict> are supported." % (str(config), str(type(config)))
@@ -55,16 +58,7 @@ def get_HiggsDNA_base():
     Find the path up to and including /HiggsDNA.
     Assumes that you are at least somewhere under /HiggsDNA
     """
-    pwd = os.path.abspath(do_cmd("pwd"))
-    subdirs = pwd.split("/")
-
-    hdna_path = ""
-    for subdir in subdirs:
-        hdna_path += subdir + "/"
-        if subdir == "HiggsDNA":
-            break
- 
-    return os.path.abspath(hdna_path)
+    return os.path.dirname(__file__)+"/../../"
 
 
 def get_HiggsDNA_conda():
@@ -96,18 +90,7 @@ def expand_path(relative_path):
     :rtype: str
     """
 
-    dir = os.path.dirname(__file__)
-    subdirs = dir.split("/")
-
-    base_path = ""
-    for subdir in subdirs:
-        if subdir == "higgs_dna":
-            break
-        base_path += subdir + "/"
-        if subdir == "HiggsDNA":
-            break
-
-    return base_path + relative_path
+    return os.path.dirname(__file__)+"/../../"+relative_path
 
 
 def update_dict(original, new):
