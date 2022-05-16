@@ -15,6 +15,7 @@ from higgs_dna.selections import gen_selections
 
 DEFAULT_OPTIONS = {
     "photons" : {
+        "nocuts" : False,
         "use_central_nano" : True,
         "pt" : 25.0,
         "eta" : [
@@ -56,7 +57,8 @@ DEFAULT_OPTIONS = {
         "lead_pt_mgg" : 0.33,
         "sublead_pt_mgg" : 0.25,
         "mass" : [100., 180.],
-        "select_highest_pt_sum" : True
+        "select_highest_pt_sum" : True,
+        "nocuts" : False
     },
     "trigger" : {
         "2016" : ["HLT_Diphoton30_18_R9Id_OR_IsoCaloId_AND_HE_R9Id_Mass90"],
@@ -67,7 +69,7 @@ DEFAULT_OPTIONS = {
         "calculate" : False,
         "max_dr" : 0.2,
         "max_pt_diff" : 15.
-    }  
+    }
 }
 
 
@@ -86,28 +88,36 @@ class DiphotonTagger(Tagger):
                     new = options
             )
 
-
     def calculate_selection(self, events):
         """
         Select photons and create diphoton pairs.
         Add a record "Diphoton" to events array with relevant information about each diphoton pair.
         In principle, there can be more than one Diphoton pair per event.
         """
-        photon_selection = self.select_photons(
+        #print("A awkward.sum(awkward.is_none(events))",awkward.sum(awkward.is_none(events)))
+
+        photon_selection,photons = self.select_photons(
                 photons = events.Photon,
                 rho = events.fixedGridRhoAll if not self.options["photons"]["use_central_nano"] else awkward.ones_like(events.Photon), # FIXME: to be deleted once fixedGridRhoAll is added to central nanoAOD
                 options = self.options["photons"]
         )
-
+        if self.options["photons"]["nocuts"]:
+            events["Photon"]=photons
+        #print("B awkward.sum(awkward.is_none(events))",awkward.sum(awkward.is_none(events)))
+        
         diphoton_selection, diphotons = self.produce_and_select_diphotons(
                 events = events,
                 photons = events.Photon[photon_selection],
                 options = self.options["diphotons"]
         )
 
+        #print("C awkward.sum(awkward.is_none(diphotons))",awkward.sum(awkward.is_none(diphotons)))
+
         if not self.is_data and self.options["gen_info"]["calculate"]:
             diphotons = self.calculate_gen_info(diphotons, self.options["gen_info"])
 
+        #print("D awkward.sum(awkward.is_none(diphotons.GenHggHiggs_dR))",awkward.sum(awkward.is_none(diphotons.GenHggHiggs_dR)))
+        #exit()
         return diphoton_selection, diphotons 
 
 
@@ -173,17 +183,22 @@ class DiphotonTagger(Tagger):
         mass_cut = (diphotons.Diphoton.mass >= options["mass"][0]) & (diphotons.Diphoton.mass <= options["mass"][1])
         all_cuts = lead_pt_cut & lead_pt_mgg_cut & sublead_pt_mgg_cut & mass_cut
 
-        self.register_cuts(
-            names = ["lead pt cut", "lead pt mgg cut", "sublead pt mgg cut", "mass cut", "all cuts"],
-            results = [lead_pt_cut, lead_pt_mgg_cut, sublead_pt_mgg_cut, mass_cut, all_cuts],
-            cut_type = "diphoton"
-        )
+        if options["nocuts"]:
+            for objects, name in zip(
+                    [lead_pt_cut, lead_pt_mgg_cut, sublead_pt_mgg_cut, mass_cut, all_cuts],
+                    ["lead_pt_cut", "lead_pt_mgg_cut", "sublead_pt_mgg_cut", "mass_cut", "all_cuts"]):
+                diphotons[("Diphoton", name)] = objects
 
-        diphotons = diphotons[all_cuts]
+        else:
+            self.register_cuts(
+                names = ["lead pt cut", "lead pt mgg cut", "sublead pt mgg cut", "mass cut", "all cuts"],
+                results = [lead_pt_cut, lead_pt_mgg_cut, sublead_pt_mgg_cut, mass_cut, all_cuts],
+                cut_type = "diphoton"
+            )
+            diphotons = diphotons[all_cuts]
 
         # Sort by sumPt
         diphotons = diphotons[awkward.argsort(diphotons.Diphoton.sumPt, ascending=False, axis=1)]
-
         # Select highest pt sum diphoton
         if options["select_highest_pt_sum"]:
             logger.debug("[DiphotonTagger : produce_and_select_diphotons] %s, selecting the highest pt_sum diphoton pair from each event." % (self.name))
@@ -200,9 +215,11 @@ class DiphotonTagger(Tagger):
             avg_diphotons = awkward.mean(awkward.num(diphotons))
             logger.debug("[DiphotonTagger : produce_and_select_diphotons] %s, syst variation : %s, %.4f diphotons per event for events with at least 1 diphoton)." % (self.name, self.current_syst, avg_diphotons)) 
 
+
         # Reshape events to have shape [n_events, n_diphotons_per_event] and then flatten.
         # This is necessary so event-level variables are properly copied for each diphoton per event
         dipho_events = awkward.broadcast_arrays(events, diphotons.Diphoton.mass)[0]
+        print("hola",dipho_events)
 
         # Add to events
         for field in ["Diphoton", "LeadPhoton", "SubleadPhoton"]:
@@ -222,19 +239,53 @@ class DiphotonTagger(Tagger):
 
         presel_cut = dipho_presel_cut & trigger_cut
 
-        self.register_cuts(
-            names = ["At least 1 diphoton pair", "HLT Trigger", "all"],
-            results = [dipho_presel_cut, trigger_cut, presel_cut]
-        )
+        if options["nocuts"]:
 
-        dipho_events = dipho_events[presel_cut]
+            if not options["select_highest_pt_sum"]:
+                raise RuntimeError("nocuts option works only with select_highest_pt_sum enabled")
+            
+            for objects, name in zip(
+                    [dipho_presel_cut, trigger_cut, presel_cut],
+                    ["dipho_presel_cut", "trigger_cut", "presel_cut"]):
+                dipho_events[("Diphoton",name)] = objects
+            dipho_events = awkward.firsts(dipho_events)#keep Nones
 
-        dipho_events = awkward.flatten(dipho_events)
+            for field in ["Diphoton", "LeadPhoton", "SubleadPhoton"]:
+                events[field] = dipho_events[field] 
+                events[(field, "pt")] = dipho_events[(field, "pt")]
+                events[(field, "eta")] = dipho_events[(field, "eta")]
+                events[(field, "phi")] = dipho_events[(field, "phi")]
+                events[(field, "mass")] = dipho_events[(field, "mass")]
+
+            dipho_events = events
+            awkward_utils.add_object_fields(
+                events = dipho_events,
+                name = "photon",
+                objects = photons,
+                n_objects = 4,
+                dummy_value = -999,
+            )
+            #print("awkward.sum(awkward.is_none(events.weight_central))", awkward.sum(awkward.is_none(events.weight_central)) )
+            #print("events.weight_central", events.weight_central )
+            dipho_events["weight_central"] = events.weight_central
+            #print("dipho_events.weight_central", dipho_events.weight_central )
+            #print("awkward.sum(awkward.is_none(dipho_events.weight_central))",awkward.sum(awkward.is_none(dipho_events.weight_central)))
+        else:
+            self.register_cuts(
+                names = ["At least 1 diphoton pair", "HLT Trigger", "all"],
+                results = [dipho_presel_cut, trigger_cut, presel_cut]
+            )
+            dipho_events = dipho_events[presel_cut]
+            dipho_events = awkward.flatten(dipho_events)#drop Nones
 
         elapsed_time = time.time() - start
         logger.debug("[DiphotonTagger] %s, syst variation : %s, total time to execute select_diphotons: %.6f s" % (self.name, self.current_syst, elapsed_time))
 
         dummy_cut = dipho_events.Diphoton.pt > 0
+        dummy_cut = awkward.where(awkward.is_none(dummy_cut), awkward.is_none(dummy_cut), dummy_cut)
+
+
+
         return dummy_cut, dipho_events 
 
     
@@ -368,13 +419,22 @@ class DiphotonTagger(Tagger):
 
         all_cuts = pt_cut & eta_cut & e_veto_cut & r9_iso_cut & hoe_cut & hlt_cut
 
-        self.register_cuts(
+        if options["nocuts"]:
+            for objects, name in zip(
+                    [pt_cut, eta_cut, e_veto_cut, r9_iso_cut, hoe_cut, hlt_cut, all_cuts], 
+                    ["pt_cut", "eta_cut", "e_veto_cut", "r9_iso_cut", "hoe_cut", "hlt_cut", "all_cuts"]): 
+                photons[name] = objects
+                #awkward_utils.add_field(events, name, objects)
+            dummyflag = (photons.pt>=0)
+            return dummyflag,photons
+
+        else:
+            self.register_cuts(
                 names = ["pt", "eta", "e_veto", "r9", "hoe", "hlt", "all"],
                 results = [pt_cut, eta_cut, e_veto_cut, r9_iso_cut, hoe_cut, hlt_cut, all_cuts],
                 cut_type = "photon"
-        )
-
-        return all_cuts
+            )
+            return all_cuts,photons
 
 # Below is an example of how the diphoton preselection could be performed with an explicit loop (C++ style) 
 # that is compiled with numba for increased performance.
