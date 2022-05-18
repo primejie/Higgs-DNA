@@ -60,7 +60,9 @@ DEFAULT_OPTIONS = {
         "dr_taus" : 0.4,
     }, 
 
-    "photon_mvaID" : -0.7
+    "photon_mvaID" : -0.7,
+    "nocuts": False,
+    "genHiggsAnalysis": True
 }
 
 class HHggbbTagger(Tagger):
@@ -69,8 +71,11 @@ class HHggbbTagger(Tagger):
         super(HHggbbTagger, self).__init__(name, options, is_data, year)
 
         if not options:
+            print("not options")
             self.options = DEFAULT_OPTIONS 
         else:
+            print("I got the following options")
+            print(options)
             self.options = misc_utils.update_dict(
                     original = DEFAULT_OPTIONS,
                     new = options
@@ -250,7 +255,9 @@ class HHggbbTagger(Tagger):
         awkward_utils.add_field(events, "n_fatjets", n_fatjets)
 
         # gen selections for the signal sample
-        if not self.is_data:
+        print("options")
+        print(self.options)
+        if (not self.is_data) and self.options["genHiggsAnalysis"]:
             gen_hbb = gen_selections.select_x_to_yz(events.GenPart, 25, 5, 5)
             gen_hgg = gen_selections.select_x_to_yz(events.GenPart, 25, 22, 22)
             gen_hzz = gen_selections.select_x_to_yz(events.GenPart, 25, 23, 23)
@@ -267,31 +274,7 @@ class HHggbbTagger(Tagger):
                             (awkward.num(gen_hww)>0) & (awkward.num(gen_htt)>0) ):
                 raise RuntimeError("can handle at most one decay to something else than gg")
 
-            #hbbevts = (awkward.num(gen_hbb)==1)
-            #hggevts = (awkward.num(gen_hgg)==1)
-            #hzzevts = (awkward.num(gen_hzz)==1)
-            #hwwevts = (awkward.num(gen_hww)==1)
-
-            #gen_otherh_parent = awkward.zeros_like(n_jets)
-            #gen_otherh_parent = awkward.fill_none(gen_otherh_parent, 0)
-            #gen_otherh_parent = awkward.where(hbbevts, gen_hbb, gen_otherh_parent)
-            #gen_otherh_parent = awkward.where(httevts, gen_htt, gen_otherh_parent)
-            #gen_otherh_parent = awkward.where(hwwevts, gen_hww, gen_otherh_parent)
-            #gen_otherh_parent = awkward.where(hzzevts, gen_hzz, gen_otherh_parent)
-
-            print(gen_hbb)
-            print(type(gen_hbb))
-            print(awkward.num(gen_hbb))
-            print(gen_htt)
-            print(type(gen_htt))
-            print(awkward.num(gen_htt))
-            print(gen_hbb.GenParent)
-            print(type(gen_hbb.GenParent))
             gen_otherh = awkward.concatenate([gen_hbb,gen_htt,gen_hww,gen_hzz], axis=1)
-            print(gen_otherh)
-            print(type(gen_otherh))
-            print(awkward.num(gen_otherh))
-            print(len(gen_otherh))
             hxxevts = (awkward.num(gen_otherh)==1)
             hggevts = (awkward.num(gen_hgg)==1)
 
@@ -317,9 +300,6 @@ class HHggbbTagger(Tagger):
                                 events.LeadPhoton.deltaR(gen_hgg.SubleadGenChild)+
                                 events.SubleadPhoton.deltaR(gen_hgg.LeadGenChild))
 
-            print("combination1",combination1)
-            print("events.LeadPhoton.deltaR(gen_hgg.LeadGenChild)",events.LeadPhoton.deltaR(gen_hgg.LeadGenChild))
-
             deltaRLeadPhotonfromGen = awkward.where(combination1,
                                                     events.LeadPhoton.deltaR(gen_hgg.LeadGenChild),
                                                     events.LeadPhoton.deltaR(gen_hgg.SubleadGenChild))
@@ -335,10 +315,6 @@ class HHggbbTagger(Tagger):
 
             deltaRLeadPhotonfromGen = awkward.flatten(deltaRLeadPhotonfromGen,axis=1)
             deltaRSubleadPhotonfromGen = awkward.flatten(deltaRSubleadPhotonfromGen,axis=1)
-            #print("type(deltaRLeadPhotonfromGen)",type(deltaRLeadPhotonfromGen))
-            #print("deltaRLeadPhotonfromGen",deltaRLeadPhotonfromGen)
-            #print("awkward.num(deltaRLeadPhotonfromGen, axis=1)",awkward.num(deltaRLeadPhotonfromGen, axis=1))
-            #print("awkward.sum(awkward.num(deltaRLeadPhotonfromGen))",awkward.sum(awkward.num(deltaRLeadPhotonfromGen)))
             awkward_utils.add_field(events, "deltaRLeadPhotonfromGen", deltaRLeadPhotonfromGen)
             awkward_utils.add_field(events, "deltaRSubleadPhotonfromGen", deltaRSubleadPhotonfromGen)
 
@@ -377,10 +353,17 @@ class HHggbbTagger(Tagger):
         presel_cut = pho_id & ptOvermgg_cut & category_cut
 
         #print(events.fields)            
-        self.register_cuts(
-            names = ["photon ID MVA", "ptOvermgg_cut", "category_cut", "all cuts"],
-            results = [pho_id, ptOvermgg_cut, category_cut, presel_cut]
-        )
+        if self.options["nocuts"]:
+            for name,objects in zip(
+                    ["hhggxx_photonIDcut", "hhggxx_ptOvermgg_cut", "hhggxx_category_cut", "hhggxx_allcuts"],
+                    [pho_id, ptOvermgg_cut, category_cut, presel_cut]):
+                awkward_utils.add_field(events, name, objects)
+                presel_cut = (events.LeadPhoton.pt > 0)
+        else:
+            self.register_cuts(
+                names = ["photon ID MVA", "ptOvermgg_cut", "category_cut", "all cuts"],
+                results = [pho_id, ptOvermgg_cut, category_cut, presel_cut]
+            )
 
         return presel_cut, events 
 
