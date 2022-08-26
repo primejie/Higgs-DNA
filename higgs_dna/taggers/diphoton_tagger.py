@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 
 from higgs_dna.taggers.tagger import Tagger, NOMINAL_TAG 
 from higgs_dna.utils import awkward_utils, misc_utils
-from higgs_dna.selections import gen_selections
+from higgs_dna.selections import gen_selections,tools
 
 DEFAULT_OPTIONS = {
     "photons" : {
@@ -66,7 +66,7 @@ DEFAULT_OPTIONS = {
         "2018" : ["HLT_Diphoton30_22_R9Id_OR_IsoCaloId_AND_HE_R9Id_Mass90"]
     },
     "gen_info" : {
-        "calculate" : False,
+        "calculate" : True,
         "max_dr" : 0.2,
         "max_pt_diff" : 15.
     }
@@ -95,12 +95,19 @@ class DiphotonTagger(Tagger):
         In principle, there can be more than one Diphoton pair per event.
         """
         #print("A awkward.sum(awkward.is_none(events))",awkward.sum(awkward.is_none(events)))
-
+        print("chuw debug:now you are in dipho tagger calculate_selection" )  
         photon_selection,photons = self.select_photons(
                 photons = events.Photon,
-                rho = events.fixedGridRhoAll if not self.options["photons"]["use_central_nano"] else awkward.ones_like(events.Photon), # FIXME: to be deleted once fixedGridRhoAll is added to central nanoAOD
+                # rho = events.fixedGridRhoAll if not self.options["photons"]["use_central_nano"] else awkward.ones_like(events.Photon), # FIXME: to be deleted once fixedGridRhoAll is added to central nanoAOD
+                rho = events.fixedGridRhoFastjetAll if not self.options["photons"]["use_central_nano"] else awkward.ones_like(events.Photon), # FIXME: to be deleted once fixedGridRhoAll is added to central nanoAOD
+                # rho = events.fixedGridRhoFastjetAll,  # FIXME: to be deleted once fixedGridRhoAll is added to central nanoAOD
                 options = self.options["photons"]
         )
+        print(self.options["photons"]["use_central_nano"])
+        print(events.fixedGridRhoFastjetAll)
+        print(awkward.ones_like(events.Photon))
+        rho_debug=events.fixedGridRhoFastjetAll if not self.options["photons"]["use_central_nano"] else awkward.ones_like(events.Photon), # FIXME: to be deleted once fixedGridRhoAll is added to central nanoAOD
+        print("This is how rho passed to select_photons:",rho_debug)
         if self.options["photons"]["nocuts"]:
             events["Photon"]=photons
         #print("B awkward.sum(awkward.is_none(events))",awkward.sum(awkward.is_none(events)))
@@ -136,7 +143,7 @@ class DiphotonTagger(Tagger):
         :return: boolean array indicating which events pass the diphoton preselection
         :rtype: awkward.highlevel.Array
         """
-
+        print("chuw debug:now you are in dipho tagger produce_and_select_diphotons" )  
         start = time.time()
 
         # Sort photons by pt
@@ -144,14 +151,18 @@ class DiphotonTagger(Tagger):
 
         # Register as `vector.Momentum4D` objects so we can do four-vector operations with them
         photons = awkward.Array(photons, with_name = "Momentum4D")
-
+        print("we want to check RHO",photons.rho)
         # Get all combinations of two photons in each event
         diphotons = awkward.combinations(photons, 2, fields=["LeadPhoton", "SubleadPhoton"])
         diphotons["Diphoton"] = diphotons.LeadPhoton + diphotons.SubleadPhoton
 
         # Add sumPt and dR for convenience
         diphotons[("Diphoton", "sumPt")] = diphotons.LeadPhoton.pt + diphotons.SubleadPhoton.pt
-        diphotons[("Diphoton", "dR")] = diphotons.LeadPhoton.deltaR(diphotons.SubleadPhoton)        
+        diphotons[("Diphoton", "dR")] = diphotons.LeadPhoton.deltaR(diphotons.SubleadPhoton)   
+           
+
+        
+        
 
         # Add lead/sublead photons to additionally be accessible together as diphotons.Diphoton.Photon
         # This is in principle a bit redundant, but makes many systematics and selections much more convenient to implement.
@@ -288,7 +299,6 @@ class DiphotonTagger(Tagger):
 
         return dummy_cut, dipho_events 
 
-    
     def calculate_gen_info(self, diphotons, options):
         """
         Calculate gen info, adding the following fields to the events array:
@@ -304,6 +314,7 @@ class DiphotonTagger(Tagger):
 
         If no match is found for a given reco/gen photon, it will be given values of -999. 
         """
+        print("chuw debug:now you are in dipho tagger calculate_gen_info" )  
         gen_hgg = gen_selections.select_x_to_yz(diphotons.GenPart, 25, 22, 22)
         
         awkward_utils.add_object_fields(
@@ -345,6 +356,7 @@ class DiphotonTagger(Tagger):
         :return: boolean array indicating which photons pass the photon selection
         :rtype: awkward.highlevel.Array
         """
+        print("chuw debug:now you are in dipho tagger select_photons" )  
         # pt
         pt_cut = photons.pt > options["pt"]
 
@@ -443,6 +455,7 @@ class DiphotonTagger(Tagger):
 # as numba does not like when a class instance is passed to a function
 @numba.njit
 def produce_diphotons(photons, n_photons, lead_pt_cut, lead_pt_mgg_cut, sublead_pt_mgg_cut):
+    print("chuw debug:now you are in dipho tagger produce_diphotons" ) 
     n_events = len(photons)
 
     diphotons_offsets = numpy.zeros(n_events + 1, numpy.int64)

@@ -1,0 +1,1097 @@
+{
+    "GluGluToBulkGravitonToHHTo2G4Q_M1000": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/9E9CEC5B-2EBF-A640-A4D5-832E5D559DDA.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/DB9AABD9-AAD0-1E40-977E-30A83CB3706B.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/6D4EB38F-3897-794C-B929-816A8304AB54.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/AD0A3EE4-734F-544E-B154-DA37E82B4CFC.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/CD38AD5A-B1D8-9C4D-8D67-808DCC544880.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/04477627-7EFC-5A4F-A4E7-B56FFD1F762C.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/1BBF3E55-2810-FD4A-886B-472DB9C1BF34.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/250EF3BE-5626-4941-A681-E1B091CFA653.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/9FD388B4-8C15-3049-94C1-AEEF9F7B4FC0.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/A56354AE-A1BF-B54C-85B2-CF5D528FDA7F.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/DC774C48-DAB5-DC4A-90B6-2D42CF622E89.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/8E450768-0F24-5A41-B1F5-50C3445BFE88.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/2B16A6E1-5453-454C-B53A-DAFFE0A14EFB.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G4Q_M1250": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/3F5EB815-B5AC-6B47-81EB-3007237CA587.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/90833B9E-FB16-9247-88F7-78DEBA152C85.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/F67C2982-46F0-A54B-840E-D76A8080FEBE.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/02E49CD0-936C-A54E-9197-3884A246DB33.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/46E01847-81C3-CC49-AF9A-2E47D8B7D0A9.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/9D7900AC-569A-0F4C-BC96-4B3478B62F1D.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/9092E1D2-59E4-FE40-824E-35C6E8962488.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/0700F7C7-0C4D-0743-8539-8CF39F476C9E.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/CA54117A-BDA6-2D4A-8DC0-D7D0479E8805.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/20D3603D-AB57-414E-A2D0-A018966B3BD7.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/58A1D28C-ADC6-8E45-85EA-A24AD3B98AAA.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/BA0C7855-F856-EB47-847A-1CFD9E16BB3B.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/97C2A0B0-51B5-504E-869A-F5F948EC7FDE.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/34D0A9CA-966E-DE46-AAB7-453440C65549.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G4Q_M1500": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/BBEC2570-C4AB-B441-8C32-23DACCB3E370.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/165D084C-C015-3E40-BE11-F783313D0BF0.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/D7543442-B2FD-DA44-8D5B-2DC8EA5E18E0.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/5845FB4D-46C6-9F45-8252-95FEAD6D505A.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G4Q_M1750": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/00000/1091DC5B-2353-6246-8C03-7BE46FEB7710.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/240000/318D50BF-8210-494B-A025-B53B9559791A.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/240000/83FA66FE-7103-AF4E-B4CF-4F81F13C8E4A.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/230000/8924D2F1-2B9E-6D43-9DF6-C80A56A857FD.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/00000/E0524A7E-6755-894A-813E-3FB93B6B8934.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/230000/B371C081-7970-5D4F-8803-F7C7E6D39CA5.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/240000/2CEE65ED-CE95-2B4F-8D68-A2901B4F5312.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/00000/B59A0EE4-91AD-7B48-93F6-FC2B0EEE48F0.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G4Q_M2000": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/1279054C-5D69-AA4E-A47C-E239A9F1DC69.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/3FE8ABF9-79F6-7E4B-A81E-D3C2DF8EB8F0.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/44F41033-2999-8E49-BF50-84C33867ECAE.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/8A4CE4F1-ACDD-4547-9CA8-8326DD3219A1.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/EDBA301D-5A2F-C540-AE60-940692D04137.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/2B3A5D57-CE75-004D-A33B-47182909A4D2.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/95602133-BE68-4A42-8595-68BAAE6F7AD2.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/EACC61B6-2CC3-EA43-9CB9-33262F003F44.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/90DCC9F2-43AA-BB46-9703-1002C57A8A18.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/B87FD783-80F1-EA4B-8690-69BA5746A5ED.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/5D5A16C3-62C5-7A47-8CEA-A43569C5FEE6.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/3620E28B-D76E-3C47-BAEA-CD760C251CFB.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/FD2FF3D3-2253-974F-A112-6CD4F4DDD3F9.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/12854F40-E09F-A841-AF14-C4747EFE7EF4.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/23D3B096-9124-CD44-8371-057AE0290586.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/3DCC846C-A266-C040-8A40-098E73F01598.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/8508D780-9F21-CD4C-A914-EFE69C45D3BA.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/A81F899B-AAF1-A045-80AF-869E25230513.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G4Q_M2500": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/A41381D8-B0CF-E646-A4AD-B22931F327FB.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/358C2B5A-4991-A042-ADDA-3285868D0D1D.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/6B31AF41-3B2A-8243-82F8-49DF83AF8CA7.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/D2FE9B18-9D16-DB4F-A1C5-BD8BBA978F55.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/20000/2340F1D2-05B2-D44D-AEDE-05385C383759.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/D383DAFE-7861-774A-9ECC-F140A2332909.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/A14677F8-3BA2-0543-A019-69AE950B4C7E.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/BE8C41CD-F1C8-F743-BCE0-CBCC33C4D71B.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/F1F53F95-C66D-084B-B747-E170DF725414.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/031776E1-59BA-A247-A8E9-2DC1E23DCAEF.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/6739975E-2FA2-7D43-BCD2-D4892C2578DD.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/20000/C62C4F6E-4E60-6749-B2A4-F11FB4701948.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/20000/BF07FA7A-6D87-B945-9413-07DC077CB810.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G4Q_M3000": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/4B2CB6A6-01DD-CF45-969E-8D091D1928FD.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/6C17FF43-5254-F042-945B-42E7517CB4B2.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/E5DDFC2B-80C1-6642-A5F0-5A0FC86B562B.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/9E76ABBC-B500-0A47-81CD-46BA4132D4CC.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/D583B06B-46DA-744F-83F3-D90B0F5DC3D9.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/18338A7B-99AA-CE4C-99C7-C7A50A29AF7F.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/0B4A3F96-B6C8-5C41-8CF1-19FCF95C91C3.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/A0127B44-14EC-E641-B973-8F648A66328E.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G4Q_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/B4B0F0DF-20ED-9D42-B900-C515BC6ADAA4.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G2l2nu_M1000": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/12C7ED8A-D977-1846-93B7-80D386C10127.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/43AEC730-B7D6-8D40-923E-0D0ADBEF4061.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/6C09F7AC-102F-1B44-8C6D-DEB88AF98B30.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/27C86426-7033-BB41-9C88-6E0874E0FEB0.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/3F6AFC8F-3A3C-994A-9387-09A368C14634.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/0735FC2D-7D80-0642-A7BA-7B9B7C538705.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/5158DB7D-4356-3044-92F7-74F1185452F2.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/71CC23B4-24A0-9F4B-AB61-F9A3076BF65F.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/9C33ED5F-B6AA-7441-B7D0-BB9AEAF21B44.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/DDDC52B4-F686-7349-964D-0312D3BDA769.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G2l2nu_M1250": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/B710BB8F-CE6B-4449-90E3-0E15B089E28A.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/C8253B85-3F43-CD43-A8BB-486D98705E67.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/05512F88-4B4D-B046-8256-A6D8F5606373.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/B12C96F4-BC7C-0940-B678-34BF7F465A67.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/8D3E2A0A-D68A-9242-8B10-FCFEF143A555.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/D6005776-C8DA-1446-B565-883A965E169E.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/668E6DFF-DDDA-6948-B2BD-565521B5E7E4.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/F7D719E3-88CE-4040-9B8C-2568D7ADDDCD.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/BECF592F-4448-C84F-B492-C75F1007486A.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/2BC8E177-C1E6-8A49-9DB9-D4CBDF4A8A81.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/C02328BF-9B93-F54F-B542-B6BD24D41B01.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/78AF55E1-2CFA-B242-A064-8204C2F70EA5.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/82746FA8-DC17-C545-8389-2DEA4DB7EBEC.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/92708798-7169-3E47-9048-B46013E2B58C.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/4D3D03CB-BCEB-364A-BFFD-ECA132EA78BC.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G2l2nu_M1500": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/948CFA42-508A-DE41-9957-5BC153657497.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/68C2C410-D450-BD40-8A8F-8E44D24C67FF.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/18419682-263A-9B49-9C27-CBC0DE1AB0D4.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/C541E203-B4B6-474A-9FEE-18C6883A1320.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/47AFF261-CE9E-C244-B393-3526328BF09C.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/A080373F-E207-0348-8600-C937002AD1E8.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/CF5A087D-1AA3-E64F-8AB4-C371CB0E5C29.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/71A7891B-C214-044C-B84A-15642E224D83.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/AEB7381D-3995-F94D-9FD5-93ABA0A5DF0A.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/00D7EE0B-D8A6-0546-8159-6F58776DD8A4.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/3067FAF9-E023-D34A-8335-8645436E78BB.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/FBBB57C2-037C-C243-9551-C8C99790997E.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G2l2nu_M1750": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/FCA33C99-6706-DF44-A0F5-063E19BDAAF9.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/5D00CA1D-3B9A-4945-BBF1-177F2D01C240.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/360D7D42-C68B-E74D-95E2-AC60DD7B3AAC.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/E245E171-F9CA-D540-AFCA-54EC300CA319.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/C330C1AD-AE4F-E54F-B822-BE0866E8CE82.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/339A329E-1086-0E47-BEB3-FCC840A82012.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/51BFC8A3-D11E-8348-82FE-6DC94356F016.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/DC0A0C04-D28A-4149-A606-C8EDBF64AF80.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/A856DEC3-35D0-F24E-9E10-DBB610BEAC6E.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/CA4695A0-859E-8E4F-88BC-EA017E922F50.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/EAF36485-89DD-9442-9140-E1B9F2509263.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G2l2nu_M2000": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/DC885B31-7645-6B40-8614-00434BBABD2F.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/638EE169-1C40-0B48-96EE-D34E144DEB17.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/C4B969F3-53D5-D449-8CFD-4D0B96107273.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/4990B6D2-8D58-464D-96A5-2311995580BF.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/CF26D4DD-7CC5-5044-836B-376E012DC26B.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/83D96C13-D219-4941-9E84-51C5981089CF.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/CD4ADA14-AFC2-F441-9749-292E1B57DF0A.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/73E58D62-0789-B443-8042-3D1CD0B6FE92.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/8DBE388B-6657-734D-8EDD-04F03FA76799.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/D2229095-D4BA-FE46-A3A2-41B6A5AF3990.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/285229A8-AD95-0145-BC6B-F3D2BB2B84FC.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/21B307A9-543E-8D42-90D6-2D015BE52E50.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/3D91CA47-BA10-8041-AB1E-A570A51983BB.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/AFE9418A-13D2-FA42-95E2-D95EC79BA7C1.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G2l2nu_M2500": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/B89BBDDB-713E-8A42-A8E4-28544F95FD6F.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/8F709EC6-9496-2842-BC79-0C68B6084604.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/003DCF37-2A6C-E74B-B0F7-3245E3FC281B.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/468BAB36-6C41-6345-BA10-B5DD23A7447B.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/5FA2FEA2-AE63-6045-8A25-5D035FD445FF.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/9B5968BE-94C6-9645-A347-84546929EC66.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/B23D0473-708B-9841-BF68-8D749E74E154.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/D4402438-6DCB-D846-8367-AFC929D1B820.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/F7ACDAEF-935A-E245-BA0C-EB82CD7B10A2.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G2l2nu_M3000": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/3EB6FAAB-A18A-6948-B8BA-126C94B79F73.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/8AC9888C-66D3-BE4D-9DBB-5ED823E4545F.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/370431F9-5F18-7E40-839F-02DB0964B153.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2l2nu_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/38CCC300-DA3D-644F-A8EB-5F29B8CE624A.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M1000": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/1D4A1DF9-9CC6-8E40-9AB1-ED994CFEC1CC.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/8BF0982B-001B-5A4C-BCE2-7AA02522D9AA.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/1387AC70-6E92-AE4B-8644-B43F57D2DA5E.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/B306E98B-98D6-5946-B6B9-A8EFAA9F0D96.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/E5A10E7D-5524-1841-869F-7D95D85879D4.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/4DBCBFB7-F262-E240-BA01-8E1DEA3826CD.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M1250": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/25B3D84F-EE28-C04A-ACAF-ADB4338DC298.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/6C7047DA-10BD-E14E-9CCC-3D839E1E3A76.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/16CF580A-8F63-9345-B143-1F430942C700.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/C3E9C543-927B-AD48-AE45-5250F04609D2.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/C58E75FE-E06C-F842-94E2-1F5351DA366A.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M1500": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/33E6C366-456E-FC48-B308-9B18698D2E6A.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/89B68D94-A53F-1A42-ACBB-2FDD0109A065.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/A65BABD1-1B9C-904A-96FB-2D15E805C881.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/6CDB50AD-F871-0A4B-93E4-0138D70F2F7A.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/3DB460BA-631A-FD47-82F9-6413E044D0E5.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/3A9E57BB-2E69-FF4A-8065-D5593AFFA31A.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/DD47A37E-18B9-BD4F-AB96-F2F50BB397FE.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/0EB99DC6-526D-DD43-87DF-11D8C198B13A.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M1750": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/4CB6BBBD-5FC4-1A42-905D-492F4A095D07.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/FC845221-DC46-9F4E-8B5C-284B8C289F76.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/D5278239-A11C-B648-B8EA-A9018B3CC074.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/958FF053-6D8E-1F42-BF0D-74FEA31BC2BE.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/02174CF3-BCCF-BD4D-A4E6-458F6B6B1C6B.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M2000": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/2AF63C76-A7B9-2748-B96A-EFEF9797479D.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/92B8B755-F3A9-464F-83EC-EFE6A19584FC.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/DE0BCC19-01CD-A94D-AC6F-82888E6D5966.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/4FE4744A-FADB-3B49-B7EF-FB2C72F42BC5.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/C7F207B6-6747-B64A-BD12-155F5CA068FD.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/01DC54C7-A0F2-0948-BC81-8B4134E2F6DA.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/23D8FC22-C8DC-E643-BF77-41DA31D81301.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/53884855-26A8-7843-B783-6C363B22BD06.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/DE70D4B2-137D-654D-960A-3AB0584E9D44.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/A9CA8523-44A6-8F45-8913-B91F7FD5ED72.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M2500": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/425D6254-6BD7-434B-99A6-97B04D40D984.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/64396781-7FBC-C24F-A818-1B2C726642AC.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/144D852F-050A-5A4B-AD16-AC872329BA44.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/B02E5488-3E43-CB41-B50D-57C586009A53.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/B7C39162-FD7C-114E-991E-76418BD6FCCF.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/644675FE-B64F-2A47-BC2B-42E13E910DCD.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/9CCC1F27-99B6-F24E-944A-36C63077F305.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/F56ED0CE-F7AA-ED44-AC3F-D48BDA9AE290.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/37325C31-C46B-9544-AF3C-0FA3F4FAA37B.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M3000": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/24ADCFDF-5D7B-EC4A-9638-900F941961EE.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/362DEB0C-7DFF-F74B-831B-65AA942ABC88.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/44D1FBDC-952B-BC45-89A2-CD9469E2DBC0.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2ZTo2G4Q_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/676C04E9-703F-1E48-A56C-E65B67670856.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G2Qlnu_M1000": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/8F765090-C30B-8544-AE05-01FE64FB8247.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/DA571714-3F5C-8A49-A6A5-528D375A1252.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/D855CE18-F0C8-1643-A247-BBD5AEBA3C8C.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/C8967DE8-57B0-B744-AC4F-B86A968DC540.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/F1C75F20-FB7E-C340-B0F7-2F3D74C37A4F.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/630037BE-4715-0A4F-A304-82DDEB02EA75.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/C1996FB4-12B2-4147-BEC7-11C5B86A7A59.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/10251CB5-3CEE-7144-BCD4-75B141CAF7C4.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/6972BCAF-9596-C141-886D-27C40B904A5D.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/E58976B8-1A68-6645-815B-430F7617EF8B.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/D8ECE198-35C0-414E-AE09-63F548440327.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/B271ED4B-97C9-5A40-BEA0-188AF135B80D.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/1D1BDE5A-C73F-CE4B-8426-0DD24F3B1156.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/ECAA3B21-758A-164D-A175-8CC675AA9978.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/A2A28A1B-8197-314B-B394-3504318AAA44.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/7F52CE12-8E24-2E47-AD53-E5E2924B50B0.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G2Qlnu_M1250": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/9E4A6D8A-1770-DC41-B543-FE162C13B50A.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/CB9EE289-3DBE-BD40-BD28-C6E7094EF9ED.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/AEAC7A74-20B5-5B42-8A7C-9FA8F82FB7B1.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/F86FEDED-A21C-3C4B-A3DA-0C56451FE13A.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/1B23771A-0C98-C84D-8ECF-36389DD044FE.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/069FA022-AD5E-2E4C-8768-146E6F68FC19.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/016BC377-791E-FC4D-81B1-DAA03DA66B5E.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/DE6ECABB-EBC6-BD43-813A-C7BC12F4FE7C.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/3FC7D974-B308-B749-9E69-A90B658B4CFE.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1250_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/0789AE1D-EA92-504E-B053-41C2303AB748.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G2Qlnu_M1500": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/C5542913-5084-B34C-A27D-509D8C2BD819.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/C696A1D9-76B6-AD49-B6C8-4F87417AFDE0.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/FF2D1936-0CF8-3344-A523-F27B81F17861.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/EE3BE608-DFBE-3D4F-9031-E7C2DC3BDDBC.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/AE246743-E2D7-7940-99DF-5C1280605155.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/C6E9B7DA-01DE-5245-884C-9ED9AE269A4C.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/CDC4519D-5BAE-5740-8A48-DB07116993A5.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/F7BCD915-ADB1-ED42-9CBE-D4E9F37D49AE.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/B8BABB50-A145-E147-8D49-25163A0E9C6A.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/2E9F59F2-85CD-8248-BD25-B8D015057F3C.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/FCC82F6C-C493-7A4A-BAAD-6AA5364046F1.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G2Qlnu_M1750": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/85210B6D-E9D2-B04F-A320-01695FA20BFE.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/519D56F9-0012-B048-8F29-F7C77A97660B.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/8A846B46-1BFD-E349-AFF4-91BD9CCF6A67.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/0D4E8B2E-C62A-7D4A-8C72-CFC52065121C.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/1151EBAF-4F1B-2D49-BAB2-6C60B002EB2A.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/525B75A5-1628-EA40-BC2B-26067D8642F8.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/C8A2A573-08FD-CD49-B13B-602C10CFCA2C.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/D1DA9F6D-42CC-AC4B-92E4-0DE40C9F1F2E.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/239D7089-CA8A-A449-8F4B-D5E2B15BDBD8.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/B9135ABE-2FD9-3542-B3AF-015F812BC49C.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/EBD2B330-9A56-6842-A3F9-BBE2FEDDB799.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/921D2F9C-F6B1-6F4B-B4AF-60D3316C1D4C.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/A4217230-B568-AE4D-A891-ECD556E1072D.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/280000/7C8071C7-49C8-6B42-9659-A2254772CB91.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-1750_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/780C7617-C84B-3A41-9F03-5D5A02FBC414.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G2Qlnu_M2000": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/DA91DEF2-966B-8D49-B0DF-C073E83981EE.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/4B9568E3-65AA-8B4B-9459-79EDB781DADA.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/5A6304ED-CAEC-984F-B6ED-2E42F057FA04.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/82DAF1E4-BAD0-B644-B3E1-252FFDC6A924.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/38BA6549-C169-3849-AC3A-7150C1897F2F.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/6419AD04-FF19-B243-944B-720D3E2F697D.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/74182192-BCBF-9A49-A86E-FE8AEB179536.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/F9394A35-9CFE-5149-BD99-FB603CBE0D2F.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/AB455839-987F-AC4C-A2BD-09696B48DCE5.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/E008BFD9-DB4A-9C43-A899-6E23DC1A6B2F.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/FCD5BA2F-83C0-F447-A68A-4D81EC7D0873.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/6B88475D-7CAD-924C-A3CF-7D8D0CE11817.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-2000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/110000/D53F171E-0449-7D4A-BF63-E31CE6BB1B92.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G2Qlnu_M2500": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/E8B5A809-9204-DC4E-8E09-13C8107A61E9.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/7632EC03-0C7D-994D-AEB0-39FC76B5A871.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/A3F56200-2A0A-8340-9937-0C2C00EA2262.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/A93D58B2-709C-D04E-A96D-23F091ED7715.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/64ACC328-99C1-1243-B320-042E7629F4AA.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/CBD3A67F-8383-C446-93D6-47AD3867D6E6.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-2500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/9C56EB25-2A6A-E84A-80E7-EA78C03763BE.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2G2Qlnu_M3000": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/CF9E8B48-2653-9241-8114-F21768ACDC75.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/7ABA7479-E95B-E64D-8BEE-C764F76733D0.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/380A4606-697B-C44C-AF20-359C4E1E88DE.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/173D189C-E6D9-CE4B-9D3D-05BF37657641.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/6C46438F-ADB3-9840-9AA1-83D0E1C52738.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/67B84984-ADB6-2747-868F-E9471BBDE2CC.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/D1692AB1-41FF-1348-9A50-A263350A64CE.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/A1888127-2EA9-6345-8475-4EC91BF6086A.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/234050F5-AB38-9E44-91C1-C08ACCF81FA1.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/60FD0383-BF5E-1C49-A1F8-5E8BEA87B649.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2G2Qlnu_M-3000_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/250000/8FD720E3-62F2-DC45-B42D-83BE357D1F6D.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2B2G_M1000": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-1000_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/17ABBCA9-D943-3749-A734-420237E864DB.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-1000_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/66E9C2C8-D7AC-314C-B977-E9418ABC2A15.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-1000_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/B126240B-A82A-B94D-988F-0A2998391C23.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-1000_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/6B85A6C4-AB45-B84E-B3FC-B7357250A597.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-1000_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/75204454-4724-B148-A42A-85E5866609DE.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-1000_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/DB79263F-1181-3B4C-8EBB-8FC1C4671D1A.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-1000_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/70000/E0DBDFEB-3AB4-7E44-B82B-443ACC4104D7.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2B2G_M1250": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-1250_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/1B04447B-2628-2945-B318-29ABAE52712A.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-1250_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/70000/494BD238-5FA6-8345-8B4B-C907A5B0F270.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-1250_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/70000/82EBF03C-F670-A54A-A31C-670415A6179F.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2B2G_M1500": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-1500_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/196D3A35-A637-4B45-920F-90E0368A4622.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-1500_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/774B1FBC-7671-E44B-AFB9-35E7FF4CE1E8.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-1500_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/A17B2B1F-01C0-E446-B1BD-8F80017E3EFB.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-1500_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/DBFCFA54-992C-4046-AF80-AFA414409105.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-1500_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/53987265-CEAF-8448-A409-1F1350FCD5B3.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2B2G_M1750": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-1750_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/0A9058A4-E951-C041-A17D-1E132C1EE773.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-1750_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/A914F36B-DF09-B345-8ACC-4C94D665E719.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-1750_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/EF701D59-6065-CF43-B43B-824F13507F71.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-1750_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/7C4E7580-B61F-4645-A011-9AD39CE423E8.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-1750_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/94664CDD-BEBB-274A-B3CC-1390C62726B7.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-1750_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/46B10D47-8543-974E-B3AD-8547593F259D.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-1750_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/60000/4ADCC251-52B4-0B4B-80E9-43B33EDE0C0E.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-1750_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/70000/75AD6FC5-9F61-DF45-9D81-F40A2B5D9261.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2B2G_M2000": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-2000_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/DE52D9F7-0B13-5C43-A26B-59B169BB1AD7.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-2000_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/8683F875-2E2B-324E-B4B6-86917B97AC62.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-2000_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/70000/0249840D-9FD7-364B-A84F-D35F05F1D280.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2B2G_M2500": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-2500_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/70000/0C778C2C-A8BC-984B-AFCD-FC0AAAE6A9E8.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-2500_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/70000/7033216D-706E-904D-A902-C968393ED54D.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-2500_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/70000/83E33691-FFE4-2342-ADC2-C7B51E13992F.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-2500_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/70000/8FB78305-EA48-3F47-9ED9-42AFB6D5E0F1.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-2500_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/70000/C0B02314-6A0F-9D49-BF99-09873E51EB5A.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-2500_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/70000/FF8B3BAF-6D11-2A45-A1F5-F068FF0AEDC8.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    },
+    "GluGluToBulkGravitonToHHTo2B2G_M3000": {
+        "xs": 1.0,
+        "bf": 1.0,
+        "files": {
+            "2017": [
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-3000_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/1582B873-042C-5E4D-9F70-12D84DB77F46.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-3000_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/45D935DB-99A2-D945-8929-0FAF73A4850E.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-3000_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/F08339DF-1983-B742-8B56-EEF69B469607.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-3000_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/CED69629-AB0D-D64D-B1A0-2D9CE3790D9E.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-3000_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/15ABA139-7844-2E4F-A005-B590A85104D5.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-3000_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/C9C0BFB6-611E-A34F-BDB9-9DF21F990858.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-3000_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/E71A617F-C456-7940-9D00-B56BE47C807A.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-3000_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/60000/CCD9EED7-365F-1740-B09D-166AE388A182.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/GluGluToBulkGravitonToHHTo2B2G_M-3000_narrow_TuneCP5_13TeV-madgraph-pythia8_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/70000/1BF1FA63-F600-6F4C-8741-19AC26D8F967.root"
+            ]
+        },
+        "systematics": {
+            "weights": {
+                "dummy_ttH_theory_sf": {
+                    "type": "event",
+                    "method": "from_branch",
+                    "branches": {
+                        "central": "genWeight",
+                        "up": "genWeight",
+                        "down": "genWeight"
+                    },
+                    "modify_central_weight": false
+                }
+            }
+        }
+    }
+}
