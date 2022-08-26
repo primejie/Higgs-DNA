@@ -262,7 +262,6 @@ class HHggbbTagger(Tagger):
         # print("options")
         print(self.options)
         if (not self.is_data) and self.options["genHiggsAnalysis"]:
-            print("chuw gen analysis")
             gen_hbb = gen_selections.select_x_to_yz(events.GenPart, 25, 5, 5)
             gen_hgg = gen_selections.select_x_to_yz(events.GenPart, 25, 22, 22)
             gen_hzz = gen_selections.select_x_to_yz(events.GenPart, 25, 23, 23)
@@ -338,15 +337,7 @@ class HHggbbTagger(Tagger):
 
             deltaRFatH4qJetGenOtherHiggs = awkward.flatten(deltaRFatH4qJetGenOtherHiggs,axis=1)
             awkward_utils.add_field(events, "deltaRFatH4qJetGenOtherHiggs", deltaRFatH4qJetGenOtherHiggs)
-        # if(not self.is_data):
 
-            # events[("Diphoton", "lead_pho_genPartFlav")]=events.LeadPhoton.genPartFlav
-            # events[("Diphoton", "sublead_pho_genPartFlav")]=events.SubleadPhoton.genPartFlav
-            # events[("Diphoton", "lead_pho_genPartIdx")]=events.LeadPhoton.genPartIdx
-            # events[("Diphoton", "sublead_pho_genPartIdx")]=events.SubleadPhoton.genPartIdx
-            # events[("Diphoton", "lead_pho_pdgID")]=events.LeadPhoton.pdgId
-            # events[("Diphoton", "sublead_pho_pdgID")]=events.SubleadPhoton.pdgId        
-                    
         events[("Diphoton", "DiphoCosThetaStar")]=tools.getCosTheta(events.LeadPhoton,events.SubleadPhoton)
         events[("Diphoton", "lead_pt_mgg")]=events.LeadPhoton.pt/events.Diphoton.mass
         events[("Diphoton", "sublead_pt_mgg")]=events.SubleadPhoton.pt/events.Diphoton.mass
@@ -377,7 +368,6 @@ class HHggbbTagger(Tagger):
 # ============================================
 #       
 
-        print("Now we save the one highest pt FatJet")
         awkward_utils.add_field(
                 events = events,
                 name = "FatHighestPtJet",
@@ -386,7 +376,6 @@ class HHggbbTagger(Tagger):
                     1, clip=True)
         )   
         FatJet_events=events[events["category"]==1]
-        print(len(events))
         if(len(FatJet_events)>0): 
         # FatJet_events = awkward.argsort(FatJet_events.SelectedFatJet.pt, axis = 1, ascending = False)
             FirstFatJet = awkward.singletons(awkward.firsts(FatJet_events.FatHighestPtJet))

@@ -46,8 +46,5 @@ def select_x_to_yz(gen_part, x_pdgId, y_pdgId, z_pdgId):
 
     return gen_child_pairs   
 
-def PhotonGenMatching(reco,gen_part):
-    gen_part = awkward.Array(gen_part, with_name = "Momentum4D")
-    pdgID=gen_part.pdgId
-    print("PDGID:",pdgID)
+
     
