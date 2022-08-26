@@ -11,7 +11,7 @@
                 "kwargs" : {
                 "name" : "diphoton_tagger",
                     "options" : {
-                        "gen_info" : { "calculate" : true }
+                        "gen_info" : { "calculate" : false }
                     }
                 }
             },
@@ -32,15 +32,9 @@
     "samples" : {
         "catalog" : "metadata/samples/HHggxx_rereco_BKG_samples.json",
         "sample_list" : [
-            "DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa",
-            "GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf",
-            "QCD_Pt-40toInf_DoubleEMEnriched_MGG-80toInf",
-            "TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8",
-            "TGJets_TuneCP5_13TeV_amcatnlo_madspin_pythia8",
-            "TTGJets_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8",
-            "TTGG_0Jets_TuneCP5_13TeV_amcatnlo_madspin_pythia8"
+            "GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf"
 	],
-        "years" : ["2017"]
+        "years" : ["2017","2016","2018"]
     },
     "variables_of_interest" : [
         ["Diphoton", "mass"], ["Diphoton", "pt"], ["Diphoton", "eta"], ["Diphoton", "phi"], ["Diphoton", "dR"],["Diphoton", "DiphoCosThetaStar"],["Diphoton", "lead_pt_mgg"],["Diphoton", "sublead_pt_mgg"],["Diphoton", "lead_vidNestedWPBitmap"],["Diphoton", "sublead_vidNestedWPBitmap"], 

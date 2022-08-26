@@ -7,7 +7,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 from higgs_dna.taggers.tagger import Tagger, NOMINAL_TAG
-from higgs_dna.selections import object_selections, lepton_selections, jet_selections, tau_selections, fatjet_selections, gen_selections
+from higgs_dna.selections import object_selections, lepton_selections, jet_selections, tau_selections, fatjet_selections, gen_selections,tools
 from higgs_dna.utils import awkward_utils, misc_utils
 
 DUMMY_VALUE = -999.
@@ -60,7 +60,7 @@ DEFAULT_OPTIONS = {
         "dr_taus" : 0.4,
     }, 
 
-    "photon_mvaID" : -0.7,
+    "photon_mvaID" : -0.9,
     "nocuts": False,
     "genHiggsAnalysis": True
 }
@@ -80,10 +80,7 @@ class HHggbbTagger(Tagger):
                     original = DEFAULT_OPTIONS,
                     new = options
             )
-
-
     def calculate_selection(self, events):
-
         # Electrons
         electron_cut = lepton_selections.select_electrons(
                 electrons = events.Electron,
@@ -253,9 +250,16 @@ class HHggbbTagger(Tagger):
 
         n_fatjets = awkward.num(fatjets)
         awkward_utils.add_field(events, "n_fatjets", n_fatjets)
+        
+        n_fat4qjets = awkward.num(fath4qjets)
+        awkward_utils.add_field(events, "n_fath4qjets", n_fat4qjets)
+        
+        n_fathbbjets = awkward.num(fathbbjets)
+        awkward_utils.add_field(events, "n_fathbbjets", n_fathbbjets)
+
 
         # gen selections for the signal sample
-        print("options")
+        # print("options")
         print(self.options)
         if (not self.is_data) and self.options["genHiggsAnalysis"]:
             gen_hbb = gen_selections.select_x_to_yz(events.GenPart, 25, 5, 5)
@@ -334,7 +338,16 @@ class HHggbbTagger(Tagger):
             deltaRFatH4qJetGenOtherHiggs = awkward.flatten(deltaRFatH4qJetGenOtherHiggs,axis=1)
             awkward_utils.add_field(events, "deltaRFatH4qJetGenOtherHiggs", deltaRFatH4qJetGenOtherHiggs)
 
+        events[("Diphoton", "DiphoCosThetaStar")]=tools.getCosTheta(events.LeadPhoton,events.SubleadPhoton)
+        events[("Diphoton", "lead_pt_mgg")]=events.LeadPhoton.pt/events.Diphoton.mass
+        events[("Diphoton", "sublead_pt_mgg")]=events.SubleadPhoton.pt/events.Diphoton.mass
+        events[("Diphoton", "lead_vidNestedWPBitmap")]=events.LeadPhoton.vidNestedWPBitmap
+        events[("Diphoton", "sublead_vidNestedWPBitmap")]=events.SubleadPhoton.vidNestedWPBitmap
+        events[("Diphoton", "lead_pho_mvaID")]=events.LeadPhoton.mvaID
+        events[("Diphoton", "sublead_pho_mvaID")]=events.SubleadPhoton.mvaID
 
+        events[("Diphoton", "lead_pho_sigEoE")]=events.LeadPhoton.energyErr/events.LeadPhoton.E
+        events[("Diphoton", "sublead_pho_sigEoE")]=events.SubleadPhoton.energyErr/events.SubleadPhoton.E
         # Photon ID and Pt/Mgg cuts
         pho_id = (events.LeadPhoton.mvaID > self.options["photon_mvaID"]) & (events.SubleadPhoton.mvaID > self.options["photon_mvaID"])
         ptOvermgg_cut = (events.LeadPhoton.pt/events.Diphoton.mass)>0.33
@@ -351,7 +364,39 @@ class HHggbbTagger(Tagger):
         category_cut = category > 0
 
         presel_cut = pho_id & ptOvermgg_cut & category_cut
+        
+# ============================================
+#       
 
+        awkward_utils.add_field(
+                events = events,
+                name = "FatHighestPtJet",
+                data = awkward.pad_none(
+                    events.SelectedFatJet[awkward.argsort(events.SelectedFatJet.pt, axis = 1, ascending = False)],
+                    1, clip=True)
+        )   
+        FatJet_events=events[events["category"]==1]
+        if(len(FatJet_events)>0): 
+        # FatJet_events = awkward.argsort(FatJet_events.SelectedFatJet.pt, axis = 1, ascending = False)
+            FirstFatJet = awkward.singletons(awkward.firsts(FatJet_events.FatHighestPtJet))
+            First_Fat_Jet = awkward.flatten(
+                FirstFatJet,
+                axis = -1 
+                )
+        # FatJet_events=events[events["category"]==1]
+            awkward_utils.add_field(events = FatJet_events,name="FirstFatJet",data = First_Fat_Jet,overwrite=True)
+            cosTheta_CS=tools.getCosThetaStar_CS(FatJet_events.Diphoton,FatJet_events.FirstFatJet)
+        # cosTheta_CS=tools.getCosThetaStar_CS(FatJet_events.Diphoton,FatJet_events.SubleadFatJet)
+            min_dr,max_dr=tools.getPhoJetDr(FatJet_events.FirstFatJet,FatJet_events.LeadPhoton,FatJet_events.SubleadPhoton)
+            tools.FillWithDummy(events,min_dr,DUMMY_VALUE,"minPhoJetDr","category",1) #when category==1 fill the value with min_dr, otherwise, fill with Dummy
+            tools.FillWithDummy(events,max_dr,DUMMY_VALUE,"maxPhoJetDr","category",1)
+            tools.FillWithDummy(events,cosTheta_CS,DUMMY_VALUE,"cosThetaStar_CS","category",1)
+        else:
+            tools.FillWithDummy(events,[],DUMMY_VALUE,"minPhoJetDr","category",1) #when category==1 fill the value with min_dr, otherwise, fill with Dummy
+            tools.FillWithDummy(events,[],DUMMY_VALUE,"maxPhoJetDr","category",1)
+            tools.FillWithDummy(events,[],DUMMY_VALUE,"cosThetaStar_CS","category",1)
+
+# ===========================================
         #print(events.fields)            
         if self.options["nocuts"]:
             for name,objects in zip(

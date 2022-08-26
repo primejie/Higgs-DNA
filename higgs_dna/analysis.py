@@ -357,7 +357,7 @@ class AnalysisManager():
 
         for task, info in summary.items():
             logger.debug("\n[AnalysisManager : run] Task '%s', PERFORMANCE summary" % (task))
-            logger.debug("\t [PERFORMANCE : %s] Processed %d total events in %s (hours:minutes:seconds) of total runtime (%.2f Hz)." % (task, info["physics"]["n_events_initial"], str(datetime.timedelta(seconds = info["performance"]["time"])), float(info["physics"]["n_events_initial"]) / info["performance"]["time"] ))
+            logger.debug("\t [PERFORMANCE : %s] Processed %d total events in %s (hours:minutes:seconds) of total runtime (%.2f Hz)." % (task, info["physics"]["n_events_initial"], str(datetime.timedelta(seconds = info["performance"]["time"])), float(info["physics"]["n_events_initial"]) / max(info["performance"]["time"],0.0000001 )))
             for portion in ["load", "syst", "taggers"]:
                 if not info["performance"]["time"] > 0:
                     continue

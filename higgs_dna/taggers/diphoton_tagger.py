@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 
 from higgs_dna.taggers.tagger import Tagger, NOMINAL_TAG 
 from higgs_dna.utils import awkward_utils, misc_utils
-from higgs_dna.selections import gen_selections
+from higgs_dna.selections import gen_selections,tools
 
 DEFAULT_OPTIONS = {
     "photons" : {
@@ -66,7 +66,7 @@ DEFAULT_OPTIONS = {
         "2018" : ["HLT_Diphoton30_22_R9Id_OR_IsoCaloId_AND_HE_R9Id_Mass90"]
     },
     "gen_info" : {
-        "calculate" : False,
+        "calculate" : True,
         "max_dr" : 0.2,
         "max_pt_diff" : 15.
     }
@@ -98,9 +98,12 @@ class DiphotonTagger(Tagger):
 
         photon_selection,photons = self.select_photons(
                 photons = events.Photon,
-                rho = events.fixedGridRhoAll if not self.options["photons"]["use_central_nano"] else awkward.ones_like(events.Photon), # FIXME: to be deleted once fixedGridRhoAll is added to central nanoAOD
+                # rho = events.fixedGridRhoAll if not self.options["photons"]["use_central_nano"] else awkward.ones_like(events.Photon), # FIXME: to be deleted once fixedGridRhoAll is added to central nanoAOD
+                rho = events.fixedGridRhoFastjetAll if not self.options["photons"]["use_central_nano"] else awkward.ones_like(events.Photon), # FIXME: to be deleted once fixedGridRhoAll is added to central nanoAOD
+                # rho = events.fixedGridRhoFastjetAll,  # FIXME: to be deleted once fixedGridRhoAll is added to central nanoAOD
                 options = self.options["photons"]
         )
+        rho_debug=events.fixedGridRhoFastjetAll if not self.options["photons"]["use_central_nano"] else awkward.ones_like(events.Photon), # FIXME: to be deleted once fixedGridRhoAll is added to central nanoAOD
         if self.options["photons"]["nocuts"]:
             events["Photon"]=photons
         #print("B awkward.sum(awkward.is_none(events))",awkward.sum(awkward.is_none(events)))
@@ -144,14 +147,17 @@ class DiphotonTagger(Tagger):
 
         # Register as `vector.Momentum4D` objects so we can do four-vector operations with them
         photons = awkward.Array(photons, with_name = "Momentum4D")
-
         # Get all combinations of two photons in each event
         diphotons = awkward.combinations(photons, 2, fields=["LeadPhoton", "SubleadPhoton"])
         diphotons["Diphoton"] = diphotons.LeadPhoton + diphotons.SubleadPhoton
 
         # Add sumPt and dR for convenience
         diphotons[("Diphoton", "sumPt")] = diphotons.LeadPhoton.pt + diphotons.SubleadPhoton.pt
-        diphotons[("Diphoton", "dR")] = diphotons.LeadPhoton.deltaR(diphotons.SubleadPhoton)        
+        diphotons[("Diphoton", "dR")] = diphotons.LeadPhoton.deltaR(diphotons.SubleadPhoton)   
+           
+
+        
+        
 
         # Add lead/sublead photons to additionally be accessible together as diphotons.Diphoton.Photon
         # This is in principle a bit redundant, but makes many systematics and selections much more convenient to implement.
@@ -288,7 +294,6 @@ class DiphotonTagger(Tagger):
 
         return dummy_cut, dipho_events 
 
-    
     def calculate_gen_info(self, diphotons, options):
         """
         Calculate gen info, adding the following fields to the events array:
