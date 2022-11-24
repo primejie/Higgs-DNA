@@ -309,8 +309,8 @@
         "bf" : 0.00227,
         "files" : {
             "2016" : [
-                "root://cms-xrd-global.cern.ch///store/mc/RunIISummer16NanoAODv7/VBFHToGG_M125_13TeV_amcatnlo_pythia8/NANOAODSIM/PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8_ext2-v1/130000/3A5314DB-5295-D24E-9CD5-C74EDDA10D37.root",
-                "root://cms-xrd-global.cern.ch///store/mc/RunIISummer16NanoAODv7/VBFHToGG_M125_13TeV_amcatnlo_pythia8/NANOAODSIM/PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8_ext2-v1/130000/1BACCB9C-94A1-EE4D-91F3-77BEFB2426F2.root"
+                "root://cms-xrd-global.cern.ch///store/mc/RunIISummer16NanoAODv7/VBFHToGG_M125_13TeV_amcatnlo_pythia8/NANOAODSIM/PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8_ext2-v1/130000/1BACCB9C-94A1-EE4D-91F3-77BEFB2426F2.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIISummer16NanoAODv7/VBFHToGG_M125_13TeV_amcatnlo_pythia8/NANOAODSIM/PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8_ext2-v1/130000/3A5314DB-5295-D24E-9CD5-C74EDDA10D37.root"
             ],
             "2017" : [
                 "root://cms-xrd-global.cern.ch///store/mc/RunIIFall17NanoAODv7/VBFHToGG_M125_13TeV_amcatnlo_pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/9297EC30-54B8-2B45-80CC-74F8E338AB49.root",

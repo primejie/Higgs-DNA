@@ -154,7 +154,8 @@ class DiphotonTagger(Tagger):
         # Add sumPt and dR for convenience
         diphotons[("Diphoton", "sumPt")] = diphotons.LeadPhoton.pt + diphotons.SubleadPhoton.pt
         diphotons[("Diphoton", "dR")] = diphotons.LeadPhoton.deltaR(diphotons.SubleadPhoton)   
-           
+        #print("gggggggggggggg")   
+        
 
         
         
@@ -182,7 +183,8 @@ class DiphotonTagger(Tagger):
                     axis = 2 # keep constant along first two dimensions ([n_events, n_diphotons]), and merge along remaining dimensions
                 )
         )
-
+       # print(diphotons.Diphoton.fields)
+        #print(diphotons.Diphoton.mass)
         lead_pt_cut = diphotons.LeadPhoton.pt >= options["lead_pt"]
         lead_pt_mgg_cut = (diphotons.LeadPhoton.pt / diphotons.Diphoton.mass) >= options["lead_pt_mgg"]
         sublead_pt_mgg_cut = (diphotons.SubleadPhoton.pt / diphotons.Diphoton.mass) >= options["sublead_pt_mgg"]

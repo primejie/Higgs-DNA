@@ -30,7 +30,7 @@
         "independent_collections" : {}
     },
     "samples" : {
-        "catalog" : "metadata/samples/HHggxx_samples_data.json",
+        "catalog" : "metadata/samples/Data_UL.json",
         "sample_list" : [
     "Data"
 	],
@@ -64,7 +64,8 @@
 	"tag_idx",
         "weight_central",
         "event","fixedGridRhoFastjetAll",
-	"hhggxx_photonIDcut", "hhggxx_ptOvermgg_cut", "hhggxx_category_cut", "hhggxx_allcuts"
+	"hhggxx_photonIDcut", "hhggxx_ptOvermgg_cut", "hhggxx_category_cut", "hhggxx_allcuts","Genhbb_pt","Genhbb_eta","Genhbb_phi","Genhbb_mass","GenYbb_pt","GenYbb_eta","GenYbb_phi","GenYbb_mass",
+    "Dijet_pt","Dijet_eta","Dijet_phi","Dijet_mass","cosdijet","mStar","mindr","res_mStar","boost_mStar"
     ],
     "branches" : [
             "Photon_pt", "Photon_eta", "Photon_phi", "Photon_mass","Photon_vidNestedWPBitmap","Photon_energyErr",
