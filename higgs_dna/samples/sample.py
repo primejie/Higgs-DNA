@@ -36,6 +36,8 @@ class Sample():
             self.lumi = LUMI[self.year]
 
         self.is_prepped = False
+        print("norm factor",self.norm_factor,"xs",self.xs)
+        print("norm br",self.bf)
 
 
     def prep(self, events):
@@ -45,6 +47,8 @@ class Sample():
         awkward_utils.add_field(events, CENTRAL_WEIGHT, awkward.ones_like(events.run))
 
         if not self.is_data:
+            print(CENTRAL_WEIGHT)
+            print("is SingleH",events[CENTRAL_WEIGHT] * events.genWeight)
             awkward_utils.add_field(
                     events = events,
                     name = CENTRAL_WEIGHT,

@@ -11,12 +11,16 @@ from higgs_dna.systematics.utils import systematic_from_bins
 
 ELECTRON_ID_SF_FILE = {
     "2016" : "jsonpog-integration/POG/EGM/2016postVFP_UL/electron.json",
+    "2016preVFP" : "jsonpog-integration/POG/EGM/2016preVFP_UL/electron.json",
+    "2016postVFP" : "jsonpog-integration/POG/EGM/2016postVFP_UL/electron.json",
     "2017" : "jsonpog-integration/POG/EGM/2017_UL/electron.json",
     "2018" : "jsonpog-integration/POG/EGM/2018_UL/electron.json"
 }
 
 ELECTRON_ID_SF = {
     "2016" : "2016postVFP",
+    "2016preVFP" : "2016preVFP",
+    "2016postVFP" : "2016postVFP",
     "2017" : "2017",
     "2018" : "2018"
 }
@@ -65,16 +69,31 @@ def electron_id_sf(events, year, central_only, input_collection, working_point =
     )
     variations["central"] = awkward.unflatten(sf, n_electrons)
 
+    # if not central_only:
+    #     syst = evaluator["UL-Electron-ID-SF"].evalv(
+    #             ELECTRON_ID_SF[year],
+    #             "syst",
+    #             working_point,
+    #             ele_eta,
+    #             ele_pt
+    #     )
+    #     variations["up"] = variations["central"] + awkward.unflatten(syst, n_electrons)
+    #     variations["down"] = variations["central"] - awkward.unflatten(syst, n_electrons)
     if not central_only:
-        syst = evaluator["UL-Electron-ID-SF"].evalv(
-                ELECTRON_ID_SF[year],
-                "syst",
-                working_point,
-                ele_eta,
-                ele_pt
-        )
-        variations["up"] = variations["central"] + awkward.unflatten(syst, n_electrons)
-        variations["down"] = variations["central"] - awkward.unflatten(syst, n_electrons)
+        syst_vars = ["sfup", "sfdown"] 
+        for syst_var in syst_vars:
+            syst = evaluator["UL-Electron-ID-SF"].evalv(
+                    ELECTRON_ID_SF[year],
+                    syst_var,
+                    working_point,
+                    ele_eta,
+                    ele_pt
+            )
+            if "up" in syst_var:
+                syst_var_name = "up"
+            elif "down" in syst_var:
+                syst_var_name = "down"
+            variations[syst_var_name] = awkward.unflatten(syst, n_electrons)
 
 
     for var in variations.keys():

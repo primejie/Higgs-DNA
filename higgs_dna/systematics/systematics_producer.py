@@ -136,7 +136,7 @@ class SystematicsProducer():
                             name = syst + "_" + "_".join(list(target_collection))
                         elif isinstance(target_collection, str):
                             name = syst + "_" + target_collection
-
+                        print("syst_info branch",syst_info["branches"])
                         weight_syst = ObjectWeightSystematic(
                                 name = name,
                                 method = syst_info["method"],
@@ -169,7 +169,7 @@ class SystematicsProducer():
                         syst_info["requires_branches"] = None
 
                     weight_syst = EventWeightSystematic(
-                            name = syst,
+                            name = syst,  ##eg. puweight
                             method = syst_info["method"],
                             modify_central_weight = syst_info["modify_central_weight"],
                             branches = syst_info["branches"],
@@ -246,10 +246,10 @@ class SystematicsProducer():
         """
         
         events_with_syst = {}
- 
+        print("weighttttttttttt",self.weights.items())
         for name, weight_systs in self.weights.items():
             logger.debug("[SystematicsProducer : produce] Producing weights for weight variation: %s" % name)
-           
+          
             # Check if the input collection is already produced (e.g. trigger SF relies on Lead/Sublead photons which are not determined until after running the diphoton tagger
             if hasattr(weight_systs[0], "input_collection"):
                 missing_fields = awkward_utils.missing_fields(events, [weight_systs[0].input_collection])
@@ -309,8 +309,9 @@ class SystematicsProducer():
         :param tag_idx_map: dictionary of the format 'tagger_name' : tag_idx. This allows us to apply weight systematics only to events which were tagged by specific taggers.
         :type tag_idx_map: dict of str : int
         """
-        
+        print("^^^^^^^^^^",events_with_syst.items())
         for name, syst_events in events_with_syst.items():
+            
             for weight_name, weight_systs in self.weights.items():
                 for weight_syst in weight_systs:
                     if weight_syst.is_applied_all:

@@ -1,2 +1,2 @@
-python -m pip install correctionlib
-gzip -d jsonpog-integration/POG/*/*/*.gz 
+python -m pip install correctionlib==2.1.0
+

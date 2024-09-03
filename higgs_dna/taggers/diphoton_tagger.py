@@ -62,6 +62,8 @@ DEFAULT_OPTIONS = {
     },
     "trigger" : {
         "2016" : ["HLT_Diphoton30_18_R9Id_OR_IsoCaloId_AND_HE_R9Id_Mass90"],
+        "2016preVFP":["HLT_Diphoton30_18_R9Id_OR_IsoCaloId_AND_HE_R9Id_Mass90"],
+        "2016postVFP":["HLT_Diphoton30_18_R9Id_OR_IsoCaloId_AND_HE_R9Id_Mass90"],
         "2017" : ["HLT_Diphoton30_22_R9Id_OR_IsoCaloId_AND_HE_R9Id_Mass90"],
         "2018" : ["HLT_Diphoton30_22_R9Id_OR_IsoCaloId_AND_HE_R9Id_Mass90"]
     },
@@ -156,7 +158,24 @@ class DiphotonTagger(Tagger):
         diphotons[("Diphoton", "dR")] = diphotons.LeadPhoton.deltaR(diphotons.SubleadPhoton)   
         #print("gggggggggggggg")   
         
-
+        diphotons[("Diphoton", "sigmoM")] = 0.5 * numpy.sqrt(
+                            (
+                                diphotons["LeadPhoton"].energyErr
+                                / (
+                                    diphotons["LeadPhoton"].pt
+                                    * numpy.cosh(diphotons["LeadPhoton"].eta)
+                                )
+                            )
+                            ** 2
+                            + (
+                                diphotons["SubleadPhoton"].energyErr
+                                / (
+                                    diphotons["SubleadPhoton"].pt
+                                    * numpy.cosh(diphotons["SubleadPhoton"].eta)
+                                )
+                            )
+                            ** 2
+                        )
         
         
 
@@ -491,7 +510,7 @@ def produce_diphotons(photons, n_photons, lead_pt_cut, lead_pt_mgg_cut, sublead_
                     diphoton = vector.obj(px = 0., py = 0., pz = 0., E = 0.) # IMPORTANT NOTE: you need to initialize this to an empty vector first. Otherwise, you will get ZeroDivisionError exceptions for like 1 out of a million events (seemingly only with numba). 
                     diphoton = diphoton + lead_photon_vec + sublead_photon_vec
 
-                    if (diphoton.mass < 100) | (diphoton.mass > 180):
+                    if (diphoton.mass < 40) | (diphoton.mass > 180):
                         continue
 
                     if lead_photon.pt / diphoton.mass < lead_pt_mgg_cut:

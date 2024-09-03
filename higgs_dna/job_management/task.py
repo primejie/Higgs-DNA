@@ -99,14 +99,16 @@ class Task():
         """
         logger.info("[Task: create_jobs] Task '%s' : splitting %d input files into %d jobs" % (self.name, len(self.files), math.ceil(float(len(self.files)) / float(self.fpo)))) 
         file_splits = create_chunks(self.files, self.fpo)
-        
+       
         for idx, file_split in enumerate(tqdm(file_splits)):
+            
             if self.max_jobs >= 0:
                 if idx >= self.max_jobs:
                     continue
-
+            
             # Check if this job was already previously added (may happen if user runs with --short and then removes it)
             if idx < len(self.jobs):
+                
                 continue
 
             self.jobs.append(
@@ -119,10 +121,10 @@ class Task():
                         config = copy.deepcopy(self.job_config)
                     )
             )
-
+    
             self.complete = False # if we just added a new job, not complete yet (had to add this for when running once with --short and then rerunning without it)
             self.merged_output_files = False
-
+        
 
     def process(self, job_map = None):
         """
@@ -347,7 +349,7 @@ class Task():
             merged_events = awkward.concatenate(merged_events)
             if not self.config["sample"]["is_data"]:
                 logger.debug("[Task : merge_outputs] Task '%s' : Applying scale1fb and lumi. Scaling central weight branch '%s' in output file '%s' by scale1fb (%.9f) times lumi (%.2f). Adding branch '%s' in output file which has no lumi scaling applied." % (self.name, CENTRAL_WEIGHT, merged_output, self.scale1fb, self.lumi, CENTRAL_WEIGHT + "_no_lumi"))
-
+                # print("scale1fb",self.scale1fb)
                 central_weight = merged_events[CENTRAL_WEIGHT] * self.scale1fb * self.lumi
                 central_weight_no_lumi = merged_events[CENTRAL_WEIGHT] * self.scale1fb
 

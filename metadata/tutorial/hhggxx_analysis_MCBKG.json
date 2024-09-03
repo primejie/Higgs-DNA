@@ -30,33 +30,24 @@
         "independent_collections" : {}
     },
     "samples" : {
-        "catalog" : "metadata/samples/20ULBkg.json",
+        "catalog" : "metadata/samples/bkg.json",
         "sample_list" : [
-            "GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8",
-            "GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8",
-            "TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8",
-            "TGJets_TuneCP5_13TeV-amcatnlo-madspin-pythia8",
-            "DiPhotonJetsBox_MGG-80toInf_13TeV-sherpa",
-            "QCD_Pt-40ToInf_DoubleEMEnriched_MGG-80ToInf_TuneCP5_13TeV-pythia8",
-            "GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8",
-            "TTGJets_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8"
-
-
+            "GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8"
+            
 	],
-        "years" : ["2017"]
+        "years" : ["2016preVFP","2016postVFP","2017","2018"]
     },
     "variables_of_interest" : [
-        ["Diphoton", "mass"], ["Diphoton", "pt"], ["Diphoton", "eta"], ["Diphoton", "phi"], ["Diphoton", "dR"],["Diphoton", "DiphoCosThetaStar"],["Diphoton", "lead_pt_mgg"],["Diphoton", "sublead_pt_mgg"],["Diphoton", "lead_vidNestedWPBitmap"],["Diphoton", "sublead_vidNestedWPBitmap"], 
-        ["Diphoton", "lead_pho_mvaID"],["Diphoton", "sublead_pho_mvaID"], ["Diphoton", "lead_pho_sigEoE"],["Diphoton", "sublead_pho_sigEoE"],["Diphoton", "lead_pho_pdgID"],["Diphoton", "sublead_pho_pdgID"],["Diphoton", "lead_pho_genPartFlav"],["Diphoton", "sublead_pho_genPartFlav"],["Diphoton", "lead_pho_genPartIdx"],["Diphoton", "sublead_pho_genPartIdx"],
+        ["Diphoton", "mass"], ["Diphoton", "pt"], ["Diphoton", "eta"], ["Diphoton", "phi"], ["Diphoton", "dR"],["Diphoton", "DiphoCosThetaStar"],["Diphoton", "lead_pt_mgg"],["Diphoton", "sublead_pt_mgg"],["Diphoton", "lead_vidNestedWPBitmap"],["Diphoton", "sublead_vidNestedWPBitmap"], ["Diphoton", "lead_pho_mvaID"],["Diphoton", "sublead_pho_mvaID"], ["Diphoton", "lead_pho_sigEoE"],["Diphoton", "sublead_pho_sigEoE"],["Diphoton", "sigmoM"], 
 
-        ["LeadPhoton", "pt"], ["LeadPhoton", "eta"], ["LeadPhoton", "phi"], ["LeadPhoton", "mass"], ["LeadPhoton", "mvaID"], ["LeadPhoton", "genPartFlav"], ["LeadPhoton", "pixelSeed"], ["LeadPhoton", "sieie"], ["LeadPhoton", "cutBased"], ["LeadPhoton", "hoe"],
-        ["SubleadPhoton", "pt"], ["SubleadPhoton", "eta"], ["SubleadPhoton", "phi"], ["SubleadPhoton", "mass"], ["SubleadPhoton", "mvaID"], ["SubleadPhoton", "genPartFlav"], ["SubleadPhoton", "pixelSeed"], ["SubleadPhoton", "sieie"], ["SubleadPhoton", "cutBased"], ["SubleadPhoton", "hoe"], 
+        ["LeadPhoton", "pt"], ["LeadPhoton", "eta"], ["LeadPhoton", "phi"], ["LeadPhoton", "mass"], ["LeadPhoton", "mvaID"], ["LeadPhoton", "genPartFlav"], ["LeadPhoton", "pixelSeed"], ["LeadPhoton", "sieie"], ["LeadPhoton", "cutBased"], ["LeadPhoton", "hoe"],["LeadPhoton", "mvaID_WP90"],["LeadPhoton", "mvaID_modified"],
+        ["SubleadPhoton", "pt"], ["SubleadPhoton", "eta"], ["SubleadPhoton", "phi"], ["SubleadPhoton", "mass"], ["SubleadPhoton", "mvaID"], ["SubleadPhoton", "genPartFlav"], ["SubleadPhoton", "pixelSeed"], ["SubleadPhoton", "sieie"], ["SubleadPhoton", "cutBased"], ["SubleadPhoton", "hoe"],["SubleadPhoton", "mvaID_WP90"],["SubleadPhoton", "mvaID_modified"],
 	
 	"fathbbjet_pt", "fathbbjet_eta", "fathbbjet_phi", "fathbbjet_mass", "fathbbjet_deepTagMD_HbbvsQCD", "fathbbjet_msoftdrop", "fathbbjet_tau1", "fathbbjet_tau2", "fathbbjet_tau3", "fathbbjet_tau4","fathbbjet_particleNet_HbbvsQCD","fathbbjet_particleNetMD_QCD","fathbbjet_particleNetMD_Xbb",
-	"fath4qjet_pt", "fath4qjet_eta", "fath4qjet_phi", "fath4qjet_mass", "fath4qjet_deepTagMD_H4qvsQCD", "fath4qjet_msoftdrop", "fath4qjet_tau1", "fath4qjet_tau2", "fath4qjet_tau3", "fath4qjet_tau4",
+	"fath4qjet_pt", "fath4qjet_eta", "fath4qjet_phi", "fath4qjet_mass", "fath4qjet_deepTagMD_H4qvsQCD", "fath4qjet_msoftdrop", "fath4qjet_tau1", "fath4qjet_tau2", "fath4qjet_tau3", "fath4qjet_tau4","fathbbjet_xbb_over_qcd","fathbbjet_jetID",
 
-	"bjet_1_pt", "bjet_1_eta", "bjet_1_phi", "bjet_1_mass", "bjet_1_btagDeepFlavB", "bjet_1_jetId", "bjet_1_hadronFlavour",
-	"bjet_2_pt", "bjet_2_eta", "bjet_2_phi", "bjet_2_mass", "bjet_2_btagDeepFlavB", "bjet_2_jetId", "bjet_2_hadronFlavour",
+	"bjet_1_pt", "bjet_1_eta", "bjet_1_phi", "bjet_1_mass", "bjet_1_btagDeepFlavB", "bjet_1_jetId", "bjet_1_hadronFlavour","bjet_1_bRegCorr","bjet_1_bRegRes",
+	"bjet_2_pt", "bjet_2_eta", "bjet_2_phi", "bjet_2_mass", "bjet_2_btagDeepFlavB", "bjet_2_jetId", "bjet_2_hadronFlavour","bjet_2_bRegCorr","bjet_2_bRegRes",
 
 
         "GenHggHiggs_pt", "GenHggHiggs_eta", "GenHggHiggs_phi", "GenHggHiggs_mass", "GenHggHiggs_dR",
@@ -72,27 +63,27 @@
 	
 	"n_electrons", "n_muons", "n_leptons", "n_jets", "n_bjets", "n_fatjets", "category","minPhoJetDr","maxPhoJetDr","cosThetaStar_CS",
 	"tag_idx",
-        "weight_central","fixedGridRhoFastjetAll",
-        "event",
+        "weight_central",
+        "event","fixedGridRhoFastjetAll","SubleadPhoton_mvaID_WP90","LeadPhoton_mvaID_WP90",
 	"hhggxx_photonIDcut", "hhggxx_ptOvermgg_cut", "hhggxx_category_cut", "hhggxx_allcuts","Genhbb_pt","Genhbb_eta","Genhbb_phi","Genhbb_mass","GenYbb_pt","GenYbb_eta","GenYbb_phi","GenYbb_mass",
-    "Dijet_pt","Dijet_eta","Dijet_phi","Dijet_mass","cosdijet","mStar","mindr","res_mStar","boost_mStar"
+    "Dijet_pt","Dijet_eta","Dijet_phi","Dijet_mass","cosdijet","mStar","mindr","res_mStar","boost_mStar","Dijet_dr","boost_cosThetaStar_CS","res_cosTheta_CS","boost_mindr","res_mindr","otherminjetphoton",
+    "leadjet_pt","leadjet_mass","leadjet_phi","leadjet_eta","leadjet_bRegRes","leadjet_btagDeepFlavB","subleadjet_pt","subleadjet_mass","subleadjet_phi","subleadjet_eta","subleadjet_bRegRes","subleadjet_btagDeepFlavB",
+    "leadjet_pt_mjj","subleadjet_pt_mjj","dijet_pt_mggjj",["Diphoton","dipho_pt_mggjj_boost"],["Diphoton","dipho_pt_mggjj_res"],"dijet_sigmoM","leadjet_jetID","subleadjet_jetID"
     ],
     "branches" : [
             "Photon_pt", "Photon_eta", "Photon_phi", "Photon_mass","Photon_vidNestedWPBitmap","Photon_energyErr",
-            "Photon_pixelSeed", "Photon_mvaID", "Photon_electronVeto","Photon_pdgId",
+            "Photon_pixelSeed", "Photon_mvaID", "Photon_electronVeto","Photon_mvaID_WP90","Photon_mvaID_modified",
             "Photon_sieie","Photon_cutBased",
             "Photon_r9", "Photon_hoe", "Photon_pfRelIso03_chg", "Photon_pfRelIso03_all",
             "Photon_isScEtaEB", "Photon_isScEtaEE",
             "Photon_trkSumPtHollowConeDR03", "Photon_photonIso", "Photon_chargedHadronIso",
             "Photon_genPartFlav",
-            "Photon_genPartIdx",
             "GenPart_eta", "GenPart_genPartIdxMother", "GenPart_mass", "GenPart_pdgId", "GenPart_phi", "GenPart_pt", "GenPart_status","GenPart_statusFlags",
             "Jet_pt", "Jet_eta", "Jet_phi", "Jet_mass", "Jet_btagDeepFlavB", "Jet_jetId", "Jet_hadronFlavour",
             "Muon_pt", "Muon_eta", "Muon_phi", "Muon_mass", "Muon_charge", "Muon_pfRelIso03_all", "Muon_dxy", "Muon_dz", "Muon_tightId", "Muon_isGlobal", "Muon_mediumId",
             "Electron_pt", "Electron_eta", "Electron_phi", "Electron_mass", "Electron_charge", "Electron_mvaFall17V2Iso_WP90", "Electron_mvaFall17V2noIso_WP90", "Electron_pfRelIso03_all", "Electron_dxy", "Electron_dz", "Electron_mvaFall17V2Iso_WP80",
-	    "FatJet_pt","FatJet_eta","FatJet_phi","FatJet_mass","FatJet_msoftdrop","FatJet_tau1","FatJet_tau2","FatJet_tau3","FatJet_tau4",
-	    "FatJet_deepTagMD_HbbvsQCD","FatJet_deepTagMD_H4qvsQCD",
-            "genWeight", "run", "event", "fixedGridRhoAll","fixedGridRhoFastjetAll","FatJet_particleNet_HbbvsQCD","FatJet_particleNetMD_QCD","FatJet_particleNetMD_Xbb"
-          
+	    "FatJet_pt","FatJet_eta","FatJet_phi","FatJet_mass","FatJet_msoftdrop","FatJet_tau1","FatJet_tau2","FatJet_tau3","FatJet_tau4","Jet_pt_jesTotalDown","Jet_pt_jesTotalUp","Jet_pt_jerUp","Jet_pt_jerDown","FatJet_pt_jesTotalDown","FatJet_pt_jesTotalUp","FatJet_pt_jerUp","FatJet_pt_jerDown",
+	    "FatJet_deepTagMD_HbbvsQCD","FatJet_deepTagMD_H4qvsQCD","Photon_pt_ScaleUp","Photon_pt_ScaleDown","Photon_dEsigmaUp","Photon_dEsigmaDown","PrefireWeight","PrefireWeight_Up","PrefireWeight_Down","puWeightUp","puWeightDown","puWeight",
+            "genWeight", "run", "event", "fixedGridRhoAll","fixedGridRhoFastjetAll","FatJet_particleNet_HbbvsQCD","FatJet_particleNetMD_QCD","FatJet_particleNetMD_Xbb","Jet_bRegRes","Jet_bRegCorr"
     ]
 } 

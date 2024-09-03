@@ -41,7 +41,7 @@ class Systematic():
     :type sample: higgs_dna.samples.sample.Sample
     """
     def __init__(self, name, method, branches = None, function = None, sample = None):
-        self.name = name
+        self.name = name ##eg puweight
         self.method = method
         self.branches = branches
         self.function = function
@@ -200,7 +200,11 @@ class WeightSystematic(Systematic):
         """
         if self.method == "from_branch":
             self.check_fields(events)
-
+            ###change
+            # for variation, variation_name in self.branches.items():
+            #     name = "weight" + "_" + self.name + "_" + variation
+            #     values = events[variation_name]
+            #     awkward_utils.add_field(events, name, values)
         elif self.method == "from_function":
             self.branches = {}
             variations = self.calculate_variations(events, central_only)
@@ -212,6 +216,8 @@ class WeightSystematic(Systematic):
                     name = tuple((variation[0], "weight" + "_" + self.name + "_" + variation[1])) 
                     self.branches[variation[1]] = name
                 logger.debug("[WeightSystematic : produce] WeightSystematic: %s, adding field %s to events array" % (self.name, name))
+                print("weight sys name", name)
+                print("weight sys ", values)
                 awkward_utils.add_field(events, name, values)
 
         for variation, branch in self.branches.items():
@@ -288,15 +294,15 @@ class WeightSystematic(Systematic):
                 message =  "[WeightSystematic : apply] WeightSystematic: %s has already been applied to events set: %s" % (self.name, syst_tag)
                 logger.exception(message)
                 raise ValueError(message)
-
-        weights = self.calculate_event_weights(events, central_only)
-
+        print("?????????")
+        weights = self.calculate_event_weights(events, central_only)  ## return weights[up] weights[down] ...
+        
         self.summary[syst_tag] = {} 
         for variation, values in weights.items():
             mean = awkward.mean(values)
             std = awkward.std(values)
             self.summary[syst_tag][variation] = {
-                    "branch" : self.name + "_" + variation,
+                    "branch" : self.name + "_" + variation,   ## puWeight_up puWeight_down ...
                     "mean" : mean, 
                     "std" : std 
             }
@@ -421,14 +427,21 @@ class ObjectWeightSystematic(WeightSystematic):
             elif isinstance(self.target_collection, tuple):
                 if isinstance(branch, tuple):
                     target_branch = self.target_collection + branch[1:]
+                 
+                    
                 else:
                     target_branch = self.target_collection + (branch)
+               
             else:
                 target_branch = (self.target_collection,) + branch[1:]
-
+             
+                
+           
+            
             weights[variation] = awkward.prod(events[target_branch], axis = 1)
-
+          
             name = "weight_" + self.name + "_" + variation
+           
             awkward_utils.add_field(events, name, weights[variation], overwrite = True)
 
         return weights
@@ -449,6 +462,9 @@ class EventWeightSystematic(WeightSystematic):
             if central_only and not variation == "central":
                 continue
             weights[variation] = events[branch]
+            name = "weight_" + self.name + "_" + variation
+            awkward_utils.add_field(events, name, weights[variation], overwrite = True)
+
 
         return weights
 

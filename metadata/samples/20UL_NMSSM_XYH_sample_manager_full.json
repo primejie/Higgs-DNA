@@ -46,8 +46,8 @@
                 "root://cms-xrd-global.cern.ch///store/mc/RunIISummer20UL16NanoAODAPVv9/NMSSM_XToYHTo2B2G_MX-1600_MY-1400_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_preVFP_v11-v1/2560000/9C8D5226-A244-A445-AEFF-EF5D2B4C96F4.root"
             ],
             "2017": [
-                "root://cms-xrd-global.cern.ch///store/mc/RunIISummer20UL17NanoAODv9/NMSSM_XToYHTo2B2G_MX-1600_MY-1400_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/106X_mc2017_realistic_v9-v1/50000/F1A25C71-96C1-6F46-905E-F92472735533.root",
-                "root://cms-xrd-global.cern.ch///store/mc/RunIISummer20UL17NanoAODv9/NMSSM_XToYHTo2B2G_MX-1600_MY-1400_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/106X_mc2017_realistic_v9-v1/50000/C1F034C3-84C6-8E4A-849A-50B4B99EEBD9.root"
+                "root://cms-xrd-global.cern.ch///store/mc/RunIISummer20UL17NanoAODv9/NMSSM_XToYHTo2B2G_MX-1600_MY-1400_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/106X_mc2017_realistic_v9-v1/50000/C1F034C3-84C6-8E4A-849A-50B4B99EEBD9.root",
+                "root://cms-xrd-global.cern.ch///store/mc/RunIISummer20UL17NanoAODv9/NMSSM_XToYHTo2B2G_MX-1600_MY-1400_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/106X_mc2017_realistic_v9-v1/50000/F1A25C71-96C1-6F46-905E-F92472735533.root"
             ],
             "2016postVFP": [
                 "root://cms-xrd-global.cern.ch///store/mc/RunIISummer20UL16NanoAODv9/NMSSM_XToYHTo2B2G_MX-1600_MY-1400_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/40000/CB1395F2-BA4F-1543-BD2E-0D29AD643E89.root",

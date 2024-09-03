@@ -1,12 +1,12 @@
-name: higgsDNA
+name: higgsdna
 channels:
   - conda-forge
 dependencies:
-  - python>=3.6
+  - python=3.7
   - pyaml
   - xrootd
   - uproot
-  - awkward>=1.5
+  - awkward
   - numba
   - pyarrow
   - pandas

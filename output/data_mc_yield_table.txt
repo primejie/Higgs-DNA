@@ -1,0 +1,14 @@
+\begin{center}
+	 \begin{tabular}{ l | r r r | r}
+	 	 \multicolumn{5}{c}{\texttt{HiggsDNAPhysTool} : Data/MC Yield Table} \\ \hline \hline
+	 	 Process & Yield & Stat. unc. & Syst. unc. & $\mathcal F$ of bkg \\ \hline
+	 	 \hline 
+	 	 signal-1000-400 & 23.7491 & $\pm \text{0.0490}$  & $~^{+\text{0.0839}}_{-\text{0.0838}}$  & 0.0005 \\ 
+	 	 Diphoton & 52503.4717 & $\pm \text{262.5622}$  & $~^{+\text{317.2789}}_{-\text{324.5674}}$  & 0.9995 \\ 
+	 	 \hline 
+	 	 Total MC bkg & 52527.2208 & $\pm \text{262.5622}$  & $~^{+\text{317.2789}}_{-\text{324.5674}}$  & 1.0000 \\ 
+	 	 \hline 
+	 	 Data & 2635.0000 & $\pm \text{51.3323}$  & $~^{+\text{0.0000}}_{-\text{0.0000}}$  & 0.0502 \\ 
+	 	 \hline \hline 
+	 \end{tabular}
+\end{center}

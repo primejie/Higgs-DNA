@@ -1,0 +1,19 @@
+name: higgs
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7
+  - pyaml
+  - xrootd
+  - uproot
+  - awkward=1.8
+  - numba
+  - pyarrow
+  - pandas
+  - rich
+  - matplotlib
+  - vector
+  - conda-pack
+  - tqdm
+  - dill
+  - enlighten

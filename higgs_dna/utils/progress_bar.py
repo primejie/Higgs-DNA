@@ -1,3 +1,4 @@
+from higgs_dna.constants import NOMINAL_TAG
 class ProgressBar():
     """
     """
@@ -16,7 +17,7 @@ class ProgressBar():
                 100. * (counts["completed"] / counts["all"]),
                 self.get_bar(counts),
                 0 if performance["time"] == 0 else 0.001 * (phys_summary["n_events_initial"] / performance["time"]),
-                0 if phys_summary["n_events_initial"] == 0 else 100. * (phys_summary["n_events_selected"]["nominal"] / phys_summary["n_events_initial"])
+                0 if phys_summary["n_events_initial"] == 0 else 100. * (phys_summary["n_events_selected"][NOMINAL_TAG] / phys_summary["n_events_initial"])
         )
         
 

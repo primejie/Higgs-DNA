@@ -69,6 +69,7 @@ def run_analysis(config):
         options = config["systematics"],
         sample = sample
     )
+    
     events = systematics_producer.produce(events)
     t_elapsed_syst = time.time() - t_start_syst
 
@@ -476,6 +477,7 @@ class AnalysisManager():
                 logger.debug("[AnalysisManager : load_events] Loaded %d events from file '%s'." % (len(events_file), file))
 
         events = awkward.concatenate(events)
+   
         return events, sum_weights
 
 
@@ -522,6 +524,7 @@ class AnalysisManager():
 
             logger.debug("[AnalysisManager : write_events] Writing output file '%s'." % (out_name))
             awkward.to_parquet(syst_events, out_name) 
+          
             outputs[syst_tag] = out_name
 
         return outputs

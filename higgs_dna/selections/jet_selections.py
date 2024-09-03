@@ -24,9 +24,10 @@ def select_jets(jets, options, clean, name = "none", tagger = None):
 
     standard_cuts = object_selections.select_objects(jets, options, clean, name, tagger)
 
-    # TODO: jet ID
+    # TODO: jet puID
+    add_cut=jets.jetId==6
 
-    all_cuts = standard_cuts
+    all_cuts = (standard_cuts)&(add_cut)
 
     if tagger is not None:
         tagger.register_cuts(

@@ -10,6 +10,7 @@ def get_dependencies(env_yaml_file):
     for dep in environment["dependencies"]:
         if not dep.startswith("python"):
             dependencies.append(dep)
+    print(dependencies)
     return dependencies
 
 setuptools.setup(

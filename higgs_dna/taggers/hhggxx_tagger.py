@@ -50,15 +50,21 @@ DEFAULT_OPTIONS = {
         "dr_electrons" : 0.4,
         "dr_muons" : 0.4,
         "dr_taus" : 0.4,
-        "dr_iso_tracks" : 0.4
+        "dr_iso_tracks" : 0.4,
+        "bjet_thresh":{
+            "2017":0.0532,
+            "2018":0.0490,
+            "2016preVFP":0.0508,
+            "2016postVFP":0.0480
+        }
     },
     "fatjets" : {
-        "pt" : 250.,
+        "pt" : 250.0,
         "eta" : 2.4,
-        "dr_photons" : 0.4,
-        "dr_electrons" : 0.4,
-        "dr_muons" : 0.4,
-        "dr_taus" : 0.4,
+        "dr_photons" : 0.8,
+        "dr_electrons" : 0.8,
+        "dr_muons" : 0.8,
+        "dr_taus" : 0.8,
     }, 
 
     "photon_mvaID" : -0.9,
@@ -103,7 +109,7 @@ class HHggbbTagger(Tagger):
                 name = "SelectedElectron",
                 data = events.Electron[electron_cut]
         )
-
+       
         # Muons
         muon_cut = lepton_selections.select_muons(
                 muons = events.Muon,
@@ -122,7 +128,7 @@ class HHggbbTagger(Tagger):
                 name = "SelectedMuon",
                 data = events.Muon[muon_cut]
         )
-
+        print("muons",muons)
         # Fat jets
         fatjet_cut = fatjet_selections.select_fatjets(
                 fatjets = events.FatJet,
@@ -144,19 +150,26 @@ class HHggbbTagger(Tagger):
                 name = "SelectedFatJet",
                 tagger = self
         )
+        events[("FatJet","xbb_over_qcd")] = events["FatJet"]["particleNetMD_Xbb"]/(events["FatJet"]["particleNetMD_Xbb"]+events["FatJet"]["particleNetMD_QCD"])
+        # print("xbb",events[("FatJet","xbb_over_qcd")])
         fatjets = awkward_utils.add_field(
                 events = events,
                 name = "SelectedFatJet",
                 data = awkward.Array(events.FatJet[fatjet_cut], with_name = "Momentum4D")
         )   
         #pick the fat jet, if any, with the highest deepTagMD_HbbvsQCD score
+        xbb_over_qcd = fatjets.particleNetMD_Xbb/(fatjets.particleNetMD_Xbb+fatjets.particleNetMD_QCD)
+        print("fatjetxbb",xbb_over_qcd)
+
         fathbbjets = awkward_utils.add_field(
                 events = events,
                 name = "SelectedFatHbbJet",
                 data = awkward.pad_none(
-                    events.SelectedFatJet[awkward.argsort(fatjets.deepTagMD_HbbvsQCD, axis = 1, ascending = False)],
+                    events.SelectedFatJet[awkward.argsort(xbb_over_qcd, axis = 1, ascending = False)],
                     1, clip=True)
-        )   
+        ) 
+        
+       # fathbbjets["xbb_over_qcd"] = xbb_over_qcd
         #pick the fat jet, if any, with the highest deepTagMD_H4qvsQCD score
         fath4qjets = awkward_utils.add_field(
                 events = events,
@@ -193,6 +206,7 @@ class HHggbbTagger(Tagger):
                 name = "SelectedJet",
                 data = events.Jet[jet_cut]
         )
+        print("nun jets",awkward.num(jets))
         #pick the two jets, with the highest btagDeepFlavB score
         bjets = awkward_utils.add_field(
                 events = events,
@@ -200,7 +214,23 @@ class HHggbbTagger(Tagger):
                 data = awkward.pad_none(
                     events.SelectedJet[awkward.argsort(jets.btagDeepFlavB, axis = 1, ascending = False)],
                     2, clip=True)
-        )   
+        )
+        
+        electronsel= awkward_utils.add_field(
+                events = events,
+                name = "Selected2Electron",
+                data = awkward.pad_none(
+                    events.SelectedElectron[awkward.argsort(electrons.pt, axis = 1, ascending = False)],
+                    2, clip=True)
+        )
+
+        muonsel= awkward_utils.add_field(
+                events = events,
+                name = "Selected2Muon",
+                data = awkward.pad_none(
+                    events.SelectedMuon[awkward.argsort(muons.pt, axis = 1, ascending = False)],
+                    2, clip=True)
+        )
 
         # Add object fields to events array
         for objects, name in zip([electrons, muons, jets, fatjets], ["electron", "muon", "jet", "fatjet"]):
@@ -216,6 +246,21 @@ class HHggbbTagger(Tagger):
             events = events,
             name = "bjet",
             objects = bjets,
+            n_objects = 2,
+            dummy_value = DUMMY_VALUE
+        )
+        awkward_utils.add_object_fields(
+            events = events,
+            name = "electron_sel",
+            objects = electronsel,
+            n_objects = 2,
+            dummy_value = DUMMY_VALUE
+        )
+
+        awkward_utils.add_object_fields(
+            events = events,
+            name = "muon_sel",
+            objects = muonsel,
             n_objects = 2,
             dummy_value = DUMMY_VALUE
         )
@@ -248,17 +293,14 @@ class HHggbbTagger(Tagger):
         
         n_jets = awkward.num(jets)
         awkward_utils.add_field(events, "n_jets", n_jets)
-        print("jet",n_jets)
-        print(len(n_jets))
-        print(len(jets))
-        n_bjets = awkward.num(bjets)
-        awkward_utils.add_field(events, "n_bjets", n_bjets)
 
+
+        n_bjets = awkward.num(jets[jets.btagDeepFlavB > self.options["jets"]["bjet_thresh"][self.year]])
+        awkward_utils.add_field(events, "n_bjets", n_bjets)
+     
         n_fatjets = awkward.num(fatjets)
         awkward_utils.add_field(events, "n_fatjets", n_fatjets)
-        print("nfatjet",n_fatjets)
-        print(len(n_fatjets))
-        print(len(fatjets))
+       
         n_fat4qjets = awkward.num(fath4qjets)
         awkward_utils.add_field(events, "n_fath4qjets", n_fat4qjets)
         
@@ -267,25 +309,22 @@ class HHggbbTagger(Tagger):
 
         #dijet_mass = get2BodyMass(events,"bjet_1_pt","bjet_1_phi","bjet_1_eta","bjet_1_mass","bjet_2_pt","bjet_2_phi","bjet_2_eta","bjet_2_mass",type=False)
         
-        print(bjets.pt)
+        # print("bjet fields",bjets.fields)
         # resjet = events.SelectedJet[awkward.argsort(jets.pt, ascending=False, axis=1)]
         resjet = bjets[awkward.argsort(bjets.pt,ascending=False,axis=1)]
         resjet = awkward.Array(resjet, with_name = "Momentum4D")
-        print("33333333",resjet.pt)
-    #     # Get all combinations of two photons in each event
+    
+    #     
         dijet = awkward.combinations(resjet, 2, fields=["Leadjet", "Subleadjet"])
-   
+    
         dijet["Dijet"] = dijet.Leadjet + dijet.Subleadjet
-        print("lead",dijet.Leadjet.pt)
-        print("sub",dijet.Subleadjet.pt)
-        print(dijet.Dijet.fields)
-        print(dijet.Dijet.pt)
+ 
         di_events=dijet
         di_events["pt"] = dijet.Dijet.pt
         di_events["phi"] = dijet.Dijet.phi
         di_events["eta"] = dijet.Dijet.eta
         di_events["mass"] = dijet.Dijet.mass
-        print(di_events.fields)
+        # print(di_events.fields)
         awkward_utils.add_object_fields(
             events = events,
             name = "Dijet",
@@ -293,22 +332,47 @@ class HHggbbTagger(Tagger):
             n_objects = 1,
             dummy_value = DUMMY_VALUE
         )
+        awkward_utils.add_object_fields(
+            events = events,
+            name = "leadjet",
+            objects = dijet.Leadjet,
+            n_objects = 1,
+            dummy_value = DUMMY_VALUE
+        )
+        awkward_utils.add_object_fields(
+            events = events,
+            name = "subleadjet",
+            objects = dijet.Subleadjet,
+            n_objects = 1,
+            dummy_value = DUMMY_VALUE
+        )
         awkward_utils.add_field(events = events,name = "resdijet",data = dijet.Dijet)
-        #leadjet = awkward.pad_none(dijet.Leadjet[awkward.argsort(dijet.Leadjet.pt, axis = 1, ascending = False)],1,clip=True)
-        #subleadjet = awkward.pad_none(dijet.Subleadjet[awkward.argsort(dijet.Subleadjet.pt, axis = 1, ascending = False)],1,clip=True)
+       
         leadjet = dijet.Leadjet
         subleadjet = dijet.Subleadjet
         leadjet = awkward.flatten(leadjet,axis=1)
         subleadjet = awkward.flatten(subleadjet,axis=1)
+   
+    
+        obj1 = awkward.unflatten(leadjet, counts = 1, axis = -1)
+    
         events["cosdijet"] = tools.getCosTheta(leadjet,subleadjet)
-       
+  
+        events["leadjet_pt_mjj"] = leadjet.pt/events.Dijet_mass
+        events["subleadjet_pt_mjj"] = subleadjet.pt/events.Dijet_mass
+        leadjet_4 = awkward.Array(leadjet,with_name="Momentum4D")
+        subleadjet_4 = awkward.Array(subleadjet,with_name="Momentum4D")
+        dijet_sigmoM = (1/pow(events.Dijet_mass,2))*pow(pow(events.leadjet_bRegRes,2)*pow(pow(leadjet_4.mass,2)+leadjet_4.dot(subleadjet_4),2)+pow(events.subleadjet_bRegRes,2)*pow(pow(subleadjet_4.mass,2)+subleadjet_4.dot(leadjet_4),2),0.5)
+        events["dijet_sigmoM"] = dijet_sigmoM
 
         mstar = get2BodyMass(events,events.Diphoton,"pt","phi","eta","mass","Dijet_pt","Dijet_phi","Dijet_eta","Dijet_mass")
         awkward_utils.add_field(events, "res_mStar", mstar)
         mstar2 = get2BodyMass(events,events.Diphoton,"pt","phi","eta","mass","fathbbjet_pt","fathbbjet_phi","fathbbjet_eta","fathbbjet_mass")
         awkward_utils.add_field(events, "boost_mStar", mstar2)
-        
-      
+        dr = dijet.Leadjet.deltaR(dijet.Subleadjet)
+        dr = awkward.flatten(dr,axis=1)
+        events["Dijet_dr"] = dr
+        events["dijet_pt_mggjj"] = events.Dijet_pt/mstar
       
         print(self.options)
         if (not self.is_data) and self.options["genHiggsAnalysis"]:
@@ -345,6 +409,16 @@ class HHggbbTagger(Tagger):
                                             gen_Ybb.GenParent, 
                                             n_objects = 1, 
                                             dummy_value = DUMMY_VALUE)
+            awkward_utils.add_object_fields(events, 
+                                            "GenYbbLeadChiled", 
+                                            gen_Ybb.LeadGenChild, 
+                                            n_objects = 1, 
+                                            dummy_value = DUMMY_VALUE)
+            awkward_utils.add_object_fields(events, 
+                                            "GenYbbSubleadChiled", 
+                                            gen_Ybb.SubleadGenChild, 
+                                            n_objects = 1, 
+                                            dummy_value = DUMMY_VALUE)
 
             awkward_utils.add_object_fields(events, 
                                             "GenOtherHiggs", 
@@ -359,6 +433,11 @@ class HHggbbTagger(Tagger):
             awkward_utils.add_object_fields(events, 
                                             "GenOtherHiggsSubleadprod", 
                                             gen_otherh.SubleadGenChild, 
+                                            n_objects = 1,
+                                            dummy_value = DUMMY_VALUE)
+            awkward_utils.add_object_fields(events, 
+                                            "GenPart", 
+                                            events.GenPart, 
                                             n_objects = 1,
                                             dummy_value = DUMMY_VALUE)
 
@@ -411,25 +490,36 @@ class HHggbbTagger(Tagger):
         events[("Diphoton", "sublead_pt_mgg")]=events.SubleadPhoton.pt/events.Diphoton.mass
         events[("Diphoton", "lead_vidNestedWPBitmap")]=events.LeadPhoton.vidNestedWPBitmap
         events[("Diphoton", "sublead_vidNestedWPBitmap")]=events.SubleadPhoton.vidNestedWPBitmap
-        events[("Diphoton", "lead_pho_mvaID")]=events.LeadPhoton.mvaID
-        events[("Diphoton", "sublead_pho_mvaID")]=events.SubleadPhoton.mvaID
+        events[("Diphoton", "lead_pho_mvaID")]=events.LeadPhoton.mvaID_modified
+        events[("Diphoton", "sublead_pho_mvaID")]=events.SubleadPhoton.mvaID_modified
 
-        events[("Diphoton", "lead_pho_sigEoE")]=events.LeadPhoton.energyErr/events.LeadPhoton.E
-        events[("Diphoton", "sublead_pho_sigEoE")]=events.SubleadPhoton.energyErr/events.SubleadPhoton.E
+        events[("Diphoton", "lead_pho_sigEoE")]=events.LeadPhoton.energyErr/(events.LeadPhoton.pt*np.cosh(events.LeadPhoton.eta))
+        events[("Diphoton", "sublead_pho_sigEoE")]=events.SubleadPhoton.energyErr/(events.SubleadPhoton.pt*np.cosh(events.SubleadPhoton.eta))
+        events[("Diphoton","dipho_pt_mggjj_res")] = events.Diphoton.pt/events.res_mStar
+        events[("Diphoton","dipho_pt_mggjj_boost")]=events.Diphoton.pt/events.boost_mStar
+      
+        # events["met_leadjet_phi"]=events.MET_phi-events.leadjet_phi
+        # events["met_subleadjet_phi"]=events.MET_phi-events.subleadjet_phi
+        # events["met_fatjet_phi"]=events.MET_phi-events.fathbbjet_phi
         # Photon ID and Pt/Mgg cuts
-        pho_id = (events.LeadPhoton.mvaID > self.options["photon_mvaID"]) & (events.SubleadPhoton.mvaID > self.options["photon_mvaID"])
+        pho_id = (events.LeadPhoton.mvaID_modified > self.options["photon_mvaID"]) & (events.SubleadPhoton.mvaID_modified > self.options["photon_mvaID"])
+        # if self.options["photon_mvaID"] == "WP90":
+        #     pho_id = (events.LeadPhoton.mvaID_WP90 == True) & (events.SubleadPhoton.mvaID_WP90 == True)
         ptOvermgg_cut = (events.LeadPhoton.pt/events.Diphoton.mass)>0.33
         ptOvermgg_cut = ptOvermgg_cut & ((events.SubleadPhoton.pt/events.Diphoton.mass)>0.25)
 
         # category
         # 1: boosted
         # 2: resolved
+        #msoftdrop = awkward.flatten(fathbbjets.msoftdrop,axis = 1)
+        #print("mso",msoftdrop)
         category = awkward.zeros_like(n_jets)
         category = awkward.fill_none(category, 0)
         category = awkward.where(n_fatjets>0, awkward.ones_like(category)*1, category)
-        category = awkward.where((n_fatjets==0) & (n_jets>1), awkward.ones_like(category)*2, category)
+        category = awkward.where(n_jets>1, awkward.ones_like(category)*2, category)
         awkward_utils.add_field(events, "category", category) 
-        category_cut = category > 0
+       
+        category_cut = category >0 
 
         presel_cut = pho_id & ptOvermgg_cut & category_cut
         
@@ -445,16 +535,19 @@ class HHggbbTagger(Tagger):
         
         deltaRleadjetphoton=awkward.where(combination2,events.LeadPhoton.deltaR(leadjet),events.LeadPhoton.deltaR(subleadjet))
         
-        deltaRleadjetphoton = awkward.where( (n_fatjets==0) & (n_jets>1), 
+        deltaRleadjetphoton = awkward.where(  (n_jets>1), 
                                                      deltaRleadjetphoton,awkward.ones_like(deltaRleadjetphoton)*DUMMY_VALUE)
         #awkward_utils.add_field(events, "deltaRleadjetphoton", deltaRleadjetphoton)
         deltaRsubleadjetphoton = awkward.where(combination2,events.SubleadPhoton.deltaR(subleadjet),events.SubleadPhoton.deltaR(leadjet))
-        deltaRsubleadjetphoton = awkward.where( (n_fatjets==0) & (n_jets>1), 
+        deltaRsubleadjetphoton = awkward.where(  (n_jets>1), 
                                                       deltaRsubleadjetphoton, 
                                                       awkward.ones_like(deltaRsubleadjetphoton)*DUMMY_VALUE)
         minjetphoton = awkward.where(deltaRleadjetphoton<deltaRsubleadjetphoton,deltaRleadjetphoton,deltaRsubleadjetphoton)
+        otherminjetphoton = awkward.where(deltaRleadjetphoton<deltaRsubleadjetphoton,deltaRsubleadjetphoton,deltaRleadjetphoton)
+
         # awkward_utils.add_field(events, "mindrjetphoton",minjetphoton)
         fathbbjet = awkward.flatten(fathbbjets,axis=-1)
+     
         combination3 = (events.LeadPhoton.deltaR(fathbbjet))<(events.LeadPhoton.deltaR(fathbbjet))
         deltaRfatjetphoton = awkward.where(combination3,events.LeadPhoton.deltaR(fathbbjet),events.LeadPhoton.deltaR(fathbbjet))
         deltaRfatjetphoton = awkward.where( (n_fatjets>0),deltaRfatjetphoton,awkward.ones_like(deltaRfatjetphoton)*DUMMY_VALUE)
@@ -469,83 +562,65 @@ class HHggbbTagger(Tagger):
                     events.SelectedFatJet[awkward.argsort(events.SelectedFatJet.pt, axis = 1, ascending = False)],
                     1, clip=True)
         ) 
-        print(events.FatHighestPtJet.pt)
-      
-        print(events.Diphoton.pt)
+       
         
         FatHighestPtJet = awkward.flatten(events.FatHighestPtJet,axis = -1)
-        print("resdijet",events.resdijet.pt)
+     
         res_dijet = awkward.flatten(events.resdijet,axis = -1)
-        print("flatten",res_dijet.pt)
-        #print(events[""][events["category"]==1])
-        print(len(events.Diphoton.pt))
-        print(len(FatHighestPtJet.pt))
-        print(FatHighestPtJet.pt)
-        print(len(res_dijet.pt))
-        print(len(FatHighestPtJet["pt"][events["category"]==1]))
+        print("resdijet",res_dijet)
+        print("dijet",res_dijet.mass)
         #dijet_events = events[events["category"]==2]
-        cosTheta_CS = awkward.zeros_like(n_jets)
-        cosTheta_CS = awkward.fill_none(cosTheta_CS, 0)
-        cosTheta_CS = awkward.where(events.category==1, tools.getCosThetaStar_CS(events.Diphoton,FatHighestPtJet),cosTheta_CS)
-        cosTheta_CS = awkward.where(events.category==2, tools.getCosThetaStar_CS(events.Diphoton,res_dijet), cosTheta_CS)
+        #cosTheta_CS = awkward.zeros_like(n_jets)
+        #cosTheta_CS = awkward.fill_none(cosTheta_CS, 0)
+        #cosTheta_CS = awkward.where(events.category==1, tools.getCosThetaStar_CS(events.Diphoton,FatHighestPtJet),cosTheta_CS)
+        #cosTheta_CS = awkward.where(events.category==2, tools.getCosThetaStar_CS(events.Diphoton,res_dijet), cosTheta_CS)
+        boost_cosTheta_CS = tools.getCosThetaStar_CS(events.Diphoton,FatHighestPtJet)
+        res_cosTheta_CS = tools.getCosThetaStar_CS(events.Diphoton,res_dijet)
+  
+
+        
         mStar = awkward.zeros_like(mstar)
         mStar = awkward.fill_none(mStar,0)
-        mStar = awkward.where(events.category==1, mstar2,mStar)
-        mStar = awkward.where(events.category==2,mstar,mStar)
-        mindr = awkward.zeros_like(deltaRfatjetphoton)
-        mindr = awkward.fill_none(mindr,0)
-        mindr = awkward.where(events.category==1,deltaRfatjetphoton,mindr)
-        mindr = awkward.where(events.category==2,minjetphoton,mindr)
+        mStar = awkward.where(events.category==1, mstar2,mStar) #fathbbjet+dipo
+        mStar = awkward.where(events.category==2,mstar,mStar) # dijet+dipo
+        # mindr = awkward.zeros_like(deltaRfatjetphoton)
+        # mindr = awkward.fill_none(mindr,0)
+        # mindr = awkward.where(events.category==1,deltaRfatjetphoton,mindr)
+        # mindr = awkward.where(events.category==2,minjetphoton,mindr)
+        boost_mindr = deltaRfatjetphoton
+        res_mindr = minjetphoton
         awkward_utils.add_field(
                 events = events,
-                name = "cosThetaStar_CS",
-                data = cosTheta_CS
+                name = "boost_cosThetaStar_CS",
+                data = boost_cosTheta_CS
         ) 
+        awkward_utils.add_field(
+                events = events,
+                name = "res_cosTheta_CS",
+                data = res_cosTheta_CS
+        ) 
+        awkward_utils.add_field(
+                events = events,
+                name = "boost_mindr",
+                data = boost_mindr
+        )
+        awkward_utils.add_field(
+                events = events,
+                name = "res_mindr",
+                data = res_mindr
+        )
+        awkward_utils.add_field(
+                events = events,
+                name = "otherminjetphoton",
+                data = otherminjetphoton 
+
+        )
         awkward_utils.add_field(
                 events = events,
                 name = "mStar",
                 data = mStar
-        ) 
-        awkward_utils.add_field(
-                events = events,
-                name = "mindr",
-                data = mindr
-        )
-        # if(len(FatJet_events)>0): 
-        #    # FatJet_events = FatJet_events[awkward.argsort(FatJet_events.SelectedFatJet.pt, axis = 1, ascending = False)]
-           
-        #     FirstFatJet = awkward.singletons(awkward.firsts(FatJet_events.FatHighestPtJet))
-        #     First_Fat_Jet = awkward.flatten(
-        #             FirstFatJet,
-        #             axis = -1 
-        #             )
-        #     print("fatjet:",len(FatJet_events))
-        #     awkward_utils.add_field(events = FatJet_events,name="FirstFatJet",data = First_Fat_Jet,overwrite=True)
-        #     print("first",FatJet_events.FirstFatJet)
-        #     cosTheta_CS=tools.getCosThetaStar_CS(FatJet_events.Diphoton,FatJet_events.FirstFatJet)
-            
-        # # cosTheta_CS=tools.getCosThetaStar_CS(FatJet_events.Diphoton,FatJet_events.SubleadFatJet)
-        #     min_dr,max_dr=tools.getPhoJetDr(FatJet_events.FirstFatJet,FatJet_events.LeadPhoton,FatJet_events.SubleadPhoton)
-        #     tools.FillWithDummy(events,min_dr,DUMMY_VALUE,"minPhoJetDr","category",1) #when category==1 fill the value with min_dr, otherwise, fill with Dummy
-        #     tools.FillWithDummy(events,max_dr,DUMMY_VALUE,"maxPhoJetDr","category",1)
-        #     tools.FillWithDummy(events,cosTheta_CS,DUMMY_VALUE,"cosThetaStar_CS","category",1)
-        # elif(len(dijet_events>0)):
-              
-        #         #awkward_utils.add_field(events = dijet_events,name="Dijet",data = dijet_events.dijet_cos,overwrite=True)
-        #         cosTheta_CS_dijet = tools.getCosThetaStar_CS(dijet_events.Diphoton,dijet_events.dijet_cos)
-        #         tools.FillWithDummy(events,[],DUMMY_VALUE,"minPhoJetDr","category",1) #when category==1 fill the value with min_dr, otherwise, fill with Dummy
-        #         tools.FillWithDummy(events,[],DUMMY_VALUE,"maxPhoJetDr","category",1)
-        #         tools.FillWithDummy(events,cosTheta_CS_dijet,DUMMY_VALUE,"cosThetaStar_CS","category",1)
-        # else:
-        #         tools.FillWithDummy(events,[],DUMMY_VALUE,"minPhoJetDr","category",1) #when category==1 fill the value with min_dr, otherwise, fill with Dummy
-        #         tools.FillWithDummy(events,[],DUMMY_VALUE,"maxPhoJetDr","category",1)
-        #         tools.FillWithDummy(events,[],DUMMY_VALUE,"cosThetaStar_CS","category",1)
-        # print("111   :",len(FatJet_events.FirstFatJet))
-        # cosTheta_CS = awkward.zeros_like(n_jets)
-        # cosTheta_CS = awkward.fill_none(cosTheta_CS, 0)
-        # cosTheta_CS = awkward.where(n_fatjets>0, tools.getCosThetaStar_CS(FatJet_events.Diphoton,FatJet_events.FirstFatJet),cosTheta_CS)
-        # cosTheta_CS = awkward.where((n_fatjets==0) & (n_jets>1), tools.getCosThetaStar_CS(dijet_events.Diphoton,dijet_events.resdijet), cosTheta_CS)
 
+        )
 # ===========================================
         #print(events.fields)            
         if self.options["nocuts"]:
