@@ -18,9 +18,9 @@
             {
                 "module_name" : "higgs_dna.taggers.hhggxx_tagger",
                 "tagger" : "HHggbbTagger",
-		"kwargs" : {
-		    "options" : {
-            "genHiggsAnalysis" : false
+                "kwargs" : {
+                    "options" : {
+			"genHiggsAnalysis" : false
 		    }
 		}
             }
@@ -81,7 +81,7 @@
                 "input_collection" : "Photon",
                 "target_collections" : [["Diphoton", "Photon"]],
                 "kwargs" : {
-                    "working_point" : "wp90"
+                    "working_point" : "modiID"
                 }
             },
             "puWeight" : {
@@ -103,7 +103,7 @@
                     "down" : "PrefireWeight_Down"
                 },
                 "modify_central_weight" : true,
-                "years" : ["2016", "2017"]
+                "years" : ["2016preVFP", "2016postVFP","2017"]
             } 
         },
         "independent_collections" : {
@@ -171,15 +171,34 @@
                     "up" : ["FatJet", "pt_jerUp"],
                     "down" : ["FatJet", "pt_jerDown"]
                 }
+            },
+            "JetHEM" : {
+                "method" : "from_branch",
+                "branch_modified" : ["Jet", "pt"],
+                "branches" : {
+                    "up" : ["Jet", "pt_jesHEMIssueUp"],
+                    "down" : ["Jet", "pt_jesHEMIssueDown"]
+                }
+            },
+            "FJHEM" : {
+                "method" : "from_branch",
+                "branch_modified" : ["FatJet", "pt"],
+                "branches" : {
+                    "up" : ["FatJet", "pt_jesHEMIssueUp"],
+                    "down" : ["FatJet", "pt_jesHEMIssueDown"]
+                }
             }
+        
         }
     },
     "samples" : {
-        "catalog" : "/metadata/samples/data.json",
+        "catalog" : "metadata/samples/20ULSingleH.json",
         "sample_list" : [
-    "Data"
+            
+            "ttHJetToGG_M125_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8"
+            
 	],
-        "years" : ["2017","2018","2016preVFP","2016postVFP"]
+        "years" : ["2018"]
     },
     "variables_of_interest" : [
         ["Diphoton", "mass"], ["Diphoton", "pt"], ["Diphoton", "eta"], ["Diphoton", "phi"], ["Diphoton", "dR"],["Diphoton", "DiphoCosThetaStar"],["Diphoton", "lead_pt_mgg"],["Diphoton", "sublead_pt_mgg"],["Diphoton", "lead_vidNestedWPBitmap"],["Diphoton", "sublead_vidNestedWPBitmap"], ["Diphoton", "lead_pho_mvaID"],["Diphoton", "sublead_pho_mvaID"], ["Diphoton", "lead_pho_sigEoE"],["Diphoton", "sublead_pho_sigEoE"], 
@@ -210,9 +229,9 @@
         "weight_central",
         "event","fixedGridRhoFastjetAll","SubleadPhoton_mvaID_WP90","LeadPhoton_mvaID_WP90",
 	"hhggxx_photonIDcut", "hhggxx_ptOvermgg_cut", "hhggxx_category_cut", "hhggxx_allcuts","Genhbb_pt","Genhbb_eta","Genhbb_phi","Genhbb_mass","GenYbb_pt","GenYbb_eta","GenYbb_phi","GenYbb_mass",
-    "Dijet_pt","Dijet_eta","Dijet_phi","Dijet_mass","cosdijet","mStar","mindr","res_mStar","boost_mStar","boost_cosThetaStar_CS","res_cosTheta_CS","boost_mindr","res_mindr","otherminjetphoton",
+    "Dijet_pt","Dijet_eta","Dijet_phi","Dijet_mass","cosdijet","mStar","mindr","res_mStar","boost_mStar","dr","boost_cosThetaStar_CS","res_cosTheta_CS","boost_mindr","res_mindr","otherminjetphoton",
     "leadjet_pt","leadjet_mass","leadjet_phi","leadjet_eta","leadjet_bRegRes","leadjet_btagDeepFlavB","subleadjet_pt","subleadjet_mass","subleadjet_phi","subleadjet_eta","subleadjet_bRegRes","subleadjet_btagDeepFlavB",
-    "leadjet_pt_mjj","subleadjet_pt_mjj","dijet_pt_mggjj",["Diphoton","dipho_pt_mggjj_boost"],["Diphoton","dipho_pt_mggjj_res"],"dijet_sigmoM","leadjet_jetID","subleadjet_jetID","Dijet_dr"
+    "leadjet_pt_mjj","subleadjet_pt_mjj","dijet_pt_mggjj",["Diphoton","dipho_pt_mggjj_boost"],["Diphoton","dipho_pt_mggjj_res"],"dijet_sigmoM","leadjet_jetID","subleadjet_jetID"
     ],
     "branches" : [
             "Photon_pt", "Photon_eta", "Photon_phi", "Photon_mass","Photon_vidNestedWPBitmap","Photon_energyErr",
@@ -227,7 +246,7 @@
             "Muon_pt", "Muon_eta", "Muon_phi", "Muon_mass", "Muon_charge", "Muon_pfRelIso03_all", "Muon_dxy", "Muon_dz", "Muon_tightId", "Muon_isGlobal", "Muon_mediumId",
             "Electron_pt", "Electron_eta", "Electron_phi", "Electron_mass", "Electron_charge", "Electron_mvaFall17V2Iso_WP90", "Electron_mvaFall17V2noIso_WP90", "Electron_pfRelIso03_all", "Electron_dxy", "Electron_dz", "Electron_mvaFall17V2Iso_WP80",
 	    "FatJet_pt","FatJet_eta","FatJet_phi","FatJet_mass","FatJet_msoftdrop","FatJet_tau1","FatJet_tau2","FatJet_tau3","FatJet_tau4","Jet_pt_jesTotalDown","Jet_pt_jesTotalUp","Jet_pt_jerUp","Jet_pt_jerDown","FatJet_pt_jesTotalDown","FatJet_pt_jesTotalUp","FatJet_pt_jerUp","FatJet_pt_jerDown",
-	    "FatJet_deepTagMD_HbbvsQCD","FatJet_deepTagMD_H4qvsQCD","Photon_pt_ScaleUp","Photon_pt_ScaleDown","Photon_dEsigmaUp","Photon_dEsigmaDown","PrefireWeight","PrefireWeight_Up","PrefireWeight_Down","puWeightUp","puWeightDown","puWeight",
+	    "FatJet_deepTagMD_HbbvsQCD","FatJet_deepTagMD_H4qvsQCD","Photon_pt_ScaleUp","Photon_pt_ScaleDown","Photon_dEsigmaUp","Photon_dEsigmaDown","PrefireWeight","PrefireWeight_Up","PrefireWeight_Down","puWeightUp","puWeightDown","puWeight","FatJet_pt_jesHEMIssueUp","FatJet_pt_jesHEMIssueDown","Jet_pt_jesHEMIssueUp","Jet_pt_jesHEMIssueDown",
             "genWeight", "run", "event", "fixedGridRhoAll","fixedGridRhoFastjetAll","FatJet_particleNet_HbbvsQCD","FatJet_particleNetMD_QCD","FatJet_particleNetMD_Xbb","Jet_bRegRes","Jet_bRegCorr"
     ]
 } 

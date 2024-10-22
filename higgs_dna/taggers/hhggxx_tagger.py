@@ -498,9 +498,9 @@ class HHggbbTagger(Tagger):
         events[("Diphoton","dipho_pt_mggjj_res")] = events.Diphoton.pt/events.res_mStar
         events[("Diphoton","dipho_pt_mggjj_boost")]=events.Diphoton.pt/events.boost_mStar
       
-        # events["met_leadjet_phi"]=events.MET_phi-events.leadjet_phi
-        # events["met_subleadjet_phi"]=events.MET_phi-events.subleadjet_phi
-        # events["met_fatjet_phi"]=events.MET_phi-events.fathbbjet_phi
+        events["met_leadjet_phi"]=events.MET_phi-events.leadjet_phi
+        events["met_subleadjet_phi"]=events.MET_phi-events.subleadjet_phi
+        events["met_fatjet_phi"]=events.MET_phi-events.fathbbjet_phi
         # Photon ID and Pt/Mgg cuts
         pho_id = (events.LeadPhoton.mvaID_modified > self.options["photon_mvaID"]) & (events.SubleadPhoton.mvaID_modified > self.options["photon_mvaID"])
         # if self.options["photon_mvaID"] == "WP90":
@@ -548,37 +548,33 @@ class HHggbbTagger(Tagger):
         # awkward_utils.add_field(events, "mindrjetphoton",minjetphoton)
         fathbbjet = awkward.flatten(fathbbjets,axis=-1)
      
-        combination3 = (events.LeadPhoton.deltaR(fathbbjet))<(events.LeadPhoton.deltaR(fathbbjet))
-        deltaRfatjetphoton = awkward.where(combination3,events.LeadPhoton.deltaR(fathbbjet),events.LeadPhoton.deltaR(fathbbjet))
+        combination3 = (events.LeadPhoton.deltaR(fathbbjet))<(events.SubleadPhoton.deltaR(fathbbjet))
+        deltaRfatjetphoton = awkward.where(combination3,events.LeadPhoton.deltaR(fathbbjet),events.SubleadPhoton.deltaR(fathbbjet))
         deltaRfatjetphoton = awkward.where( (n_fatjets>0),deltaRfatjetphoton,awkward.ones_like(deltaRfatjetphoton)*DUMMY_VALUE)
-        
+        deltaRfatjetphoton_max = awkward.where(combination3,events.SubleadPhoton.deltaR(fathbbjet),events.LeadPhoton.deltaR(fathbbjet))
+        deltaRfatjetphoton_max = awkward.where( (n_fatjets>0),deltaRfatjetphoton_max,awkward.ones_like(deltaRfatjetphoton_max)*DUMMY_VALUE)
 
 
-
-        awkward_utils.add_field(
-                events = events,
-                name = "FatHighestPtJet",
-                data = awkward.pad_none(
-                    events.SelectedFatJet[awkward.argsort(events.SelectedFatJet.pt, axis = 1, ascending = False)],
-                    1, clip=True)
-        ) 
+        # awkward_utils.add_field(
+        #         events = events,
+        #         name = "FatHighestPtJet",
+        #         data = awkward.pad_none(
+        #             events.SelectedFatJet[awkward.argsort(events.SelectedFatJet.pt, axis = 1, ascending = False)],
+        #             1, clip=True)
+        # ) 
        
         
-        FatHighestPtJet = awkward.flatten(events.FatHighestPtJet,axis = -1)
+        FatHighestJet = awkward.flatten(events.SelectedFatHbbJet,axis = -1)
      
         res_dijet = awkward.flatten(events.resdijet,axis = -1)
-        print("resdijet",res_dijet)
-        print("dijet",res_dijet.mass)
         #dijet_events = events[events["category"]==2]
         #cosTheta_CS = awkward.zeros_like(n_jets)
         #cosTheta_CS = awkward.fill_none(cosTheta_CS, 0)
         #cosTheta_CS = awkward.where(events.category==1, tools.getCosThetaStar_CS(events.Diphoton,FatHighestPtJet),cosTheta_CS)
         #cosTheta_CS = awkward.where(events.category==2, tools.getCosThetaStar_CS(events.Diphoton,res_dijet), cosTheta_CS)
-        boost_cosTheta_CS = tools.getCosThetaStar_CS(events.Diphoton,FatHighestPtJet)
+        boost_cosTheta_CS = tools.getCosThetaStar_CS(events.Diphoton,FatHighestJet)
         res_cosTheta_CS = tools.getCosThetaStar_CS(events.Diphoton,res_dijet)
   
-
-        
         mStar = awkward.zeros_like(mstar)
         mStar = awkward.fill_none(mStar,0)
         mStar = awkward.where(events.category==1, mstar2,mStar) #fathbbjet+dipo
@@ -588,6 +584,7 @@ class HHggbbTagger(Tagger):
         # mindr = awkward.where(events.category==1,deltaRfatjetphoton,mindr)
         # mindr = awkward.where(events.category==2,minjetphoton,mindr)
         boost_mindr = deltaRfatjetphoton
+        boost_maxdr = deltaRfatjetphoton_max
         res_mindr = minjetphoton
         awkward_utils.add_field(
                 events = events,
@@ -603,6 +600,11 @@ class HHggbbTagger(Tagger):
                 events = events,
                 name = "boost_mindr",
                 data = boost_mindr
+        )
+        awkward_utils.add_field(
+                events = events,
+                name = "boost_maxdr",
+                data = boost_maxdr
         )
         awkward_utils.add_field(
                 events = events,

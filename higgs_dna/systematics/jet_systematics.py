@@ -47,23 +47,23 @@ DEEPJET_RESHAPE_SF = {
 # }
 DEEPJET_VARIATIONS = { 
     "up_jes" : [5, 0], # applicable to b (5) and light (0) jets, but not charm (4)
-    "up_lf" : [5],
-    "up_hfstats1" : [5],
-    "up_hfstats2" : [5],
+    "up_lf" : [5,0],
+    "up_hfstats1" : [5,0],
+    "up_hfstats2" : [5,0],
     "up_cferr1" : [4],
     "up_cferr2" : [4],
-    "up_hf" : [0],
-    "up_lfstats1" : [0],
-    "up_lfstats2" : [0],
+    "up_hf" : [5,0],
+    "up_lfstats1" : [5,0],
+    "up_lfstats2" : [5,0],
     "down_jes" : [5, 0], # applicable to b (5) and light (0) jets, but not charm(4)
-    "down_lf" : [5],
-    "down_hfstats1" : [5],
-    "down_hfstats2" : [5],
+    "down_lf" : [5,0],
+    "down_hfstats1" : [5,0],
+    "down_hfstats2" : [5,0],
     "down_cferr1" : [4],
     "down_cferr2" : [4],
-    "down_hf" : [0],
-    "down_lfstats1" : [0],
-    "down_lfstats2" : [0],
+    "down_hf" : [5,0],
+    "down_lfstats1" : [5,0],
+    "down_lfstats2" : [5,0],
 }
 
 def btag_deepjet_reshape_sf(events, year, central_only, input_collection):
