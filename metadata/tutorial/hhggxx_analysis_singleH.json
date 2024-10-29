@@ -176,10 +176,12 @@
         }
     },
     "samples" : {
-        "catalog" : "metadata/samples/20ULSingleH.json",
+        "catalog" : "metadata/samples/singleH.json",
         "sample_list" : [
+            "VBFHToGG_M125_TuneCP5_13TeV-amcatnlo-pythia8",
+            "GluGluHToGG_M125_TuneCP5_13TeV-amcatnloFXFX-pythia8",
+            "VHToGG_M125_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8"
             
-            "ttHJetToGG_M125_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8"
             
 	],
         "years" : ["2017","2016preVFP","2016postVFP"]
